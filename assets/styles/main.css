@@ -1,0 +1,100 @@
+@media screen and (max-width: 767px) { .dropdown-menu { display: none; position: absolute; }
+  .dropdown-menu.toggle { display: grid; }
+  .dropdown { text-align: left; }
+  .intro { padding: 2rem 2rem; }
+  .intro_text { font-size: 1.25rem; }
+  .section { display: block; padding: 2rem 2rem; }
+  .section .title { text-align: left; }
+  .title { text-align: left; padding-bottom: 1.5rem; }
+  .skillz { display: block; }
+  .time-place { display: block; }
+  .cate-container { padding-bottom: 1.5rem; }
+  .featured-projects .project { display: block; }
+  .featured-projects .project .caption { padding-top: 1rem; margin: 0; }
+  .footer { display: block; padding: 3rem 0rem; text-align: center; }
+  .copyright { padding-bottom: 1.5rem; }
+  .links { display: block; }
+  .project-post { display: block; padding: 0 2rem; flex-direction: column; }
+  .project-post .content { font-size: 1rem; font-weight: 300; } }
+@media (min-width: 769px) { .dropdown-toggle { display: none; }
+  .dropdown-menu { margin: 0 0 0 4rem; }
+  .dropdown-menu a { margin: 0 1rem 0 0; }
+  .project-post { flex-direction: column; display: flex; justify-content: center; padding: 4rem 20rem; }
+  .project-post .content { font-size: 1.25rem; font-weight: 300; }
+  .time-place { display: flex; justify-content: space-between; }
+  .section { display: flex; justify-content: center; padding: 4rem 12rem; }
+  .section .title { text-align: right; } }
+.project-post img + em { font-size: 1rem; color: #444452; display: block; text-align: center; }
+.project-post .content a { text-decoration: underline !important; }
+.project-post .ytb-embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+.project-post .ytb-embed-container iframe, .project-post .ytb-embed-container object, .project-post .ytb-embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.project-post .img-wrapper { display: flex; justify-content: center; }
+.project-post .img-wrapper p { width: fit-content; }
+.project-post .page-title { margin-bottom: 2rem; }
+.project-post .page-title h1 { font-size: 2.8rem; margin: 0 0 0.5rem 0; }
+.project-post .page-title .item { font-size: 0.8rem; }
+.project-post .tags .item { display: inline-block; margin: 3px 3px 3px 0; padding: 5px 10px; border-radius: 3px; color: #757575; background: #f2f2f2; }
+.project-post .tags .item:first-of-type { margin-left: 0; }
+.project-post .content { color: black; }
+.project-post .content .img-responsive { width: 100%; display: block; }
+.project-post .content p { margin-top: 0; margin-bottom: 25px; }
+
+.section .title { font-size: large; flex-shrink: 3; width: 100%; margin-right: 70px; color: #007bff; text-transform: uppercase; font-weight: 700; letter-spacing: 2px; }
+.section .content { font-weight: 300; font-size: 1rem; width: 100%; }
+.section .content p { margin-top: 0; margin-bottom: 25px; }
+
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+
+.navbar.toggle { padding: 1rem 2rem 8rem 2rem; }
+
+.job { margin-bottom: 2rem; }
+.job .company { font-weight: 500 !important; font-size: large; }
+.job .time { font-family: 'Inconsolata', monospace; }
+.job position { font-weight: 400; }
+
+.skills .category { margin-bottom: 1.5rem; font-size: large; }
+.skills .category .label { font-weight: 700; color: inherit !important; }
+.skills .category .content { margin-bottom: 0.5rem; }
+
+/* Other Projects */
+.projects .project { margin-bottom: 2rem; display: flex; }
+.projects .project img { width: 200px; height: 150px; object-fit: scale-down; overflow: hidden; padding: 0 3rem 0 0; }
+.projects .project .name { font-weight: 500 !important; font-size: large; }
+.projects .project p { margin-bottom: 0.5rem; }
+.projects .project .item { display: inline-block; margin: 3px 3px 3px 0; font-family: 'Inconsolata', monospace; font-size: 0.75rem; font-weight: 700; padding: 2px 7px; border-radius: 3px; color: #007bff; border: 1px solid #007bff; background: transparent; }
+.projects .project .item:first-of-type { margin-left: 0; }
+
+.quote { font-style: italic; box-shadow: inset 3px 0 0 0 #000000; padding-left: 23px; margin-left: -20px; }
+
+.blogs { display: block; }
+.blogs .blog-header { font-size: 2.8rem; margin: 0 0 4rem 0; }
+.blogs .blog-post { display: flex; margin-bottom: 2rem; }
+.blogs .blog-post .post-inner { justify-content: center !important; flex-wrap: wrap; flex-direction: column; display: flex; }
+.blogs .blog-post .post-inner .post-title { font-size: 1.8rem; font-weight: 600; }
+.blogs .blog-post .post-inner .post-desc { font-size: 1rem; margin: 0 0 0.5rem 0; font-weight: 300; }
+.blogs .blog-post .post-inner .post-time { font-size: 1rem; }
+.blogs .post-img { object-fit: contain; width: 210px; height: 140px; margin-right: 3rem; border-radius: 5px; }
+
+.night { background-color: #171c28; color: #e7e7e7; }
+.night .project-post .content { color: #e7e7e7; }
+.night .quote { font-style: italic; box-shadow: inset 3px 0 0 0 #e7e7e7; padding-left: 23px; margin-left: -20px; }
+
+/* The grid: Four equal columns that floats next to each other */
+.carousel { padding-bottom: 2rem; }
+.carousel .items { width: 100%; display: flex; white-space: nowrap; overflow: hidden; text-align: center; }
+.carousel p { flex: 40%; }
+.carousel p .item2 { width: 100%; }
+.carousel .item { display: inline-block; width: 20%; flex-shrink: 0; padding: 10px; }
+.carousel .item img { opacity: 0.8; cursor: pointer; width: 100%; }
+.carousel .item img:hover { opacity: 1; }
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.carousel-container { position: relative; padding-top: 1rem; display: block; text-align: center; }
+.carousel-container #imgtext { font-size: 1rem; color: #444452; display: block; text-align: center; }
+.carousel-container .expanded-img { width: 100%; }
+.carousel-container .prev-button { left: 0; }
+.carousel-container .next-button { right: 0; }
+.carousel-container .prev-button, .carousel-container .next-button { position: absolute; font-size: xx-large; top: 0; bottom: 0; z-index: 1; display: flex; align-items: center; justify-content: center; color: #000000 !important; font-weight: 800; text-align: center; transition: opacity .15s ease; }
+
+.separator { padding-bottom: 10px; padding-bottom: 24px; margin-top: 32px; margin-bottom: 14px; justify-content: center; display: flex; box-sizing: inherit; }
+.separator .dot { margin-right: 20px; width: 3px; height: 3px; background-color: #080808; display: inline-block; border-radius: 50%; }

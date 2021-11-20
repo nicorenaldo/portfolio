@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Jagawana — Internet of Things</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:site_name" content="Nico's Portfolio">
+        <meta property="og:title" content="Jagawana — Internet of Things">
+        <meta property="og:description" content="How to record sounds on device and sending it to cloud.">
+        <meta itemprop="keywords" content="Bangkit,Jagawana,Esp32 Audio,Record Audio,Mqtt Audio,record audio,send audio mqtt,esp32 audio,microphone arduino,jagawana,bangkit 2021" />
+        
+            <meta property="article:tag" content="Bangkit">
+        
+            <meta property="article:tag" content="Jagawana">
+        
+            <meta property="article:tag" content="Esp32 Audio">
+        
+            <meta property="article:tag" content="Record Audio">
+        
+            <meta property="article:tag" content="Mqtt Audio">
+        
+            <meta property="article:tag" content="record audio">
+        
+            <meta property="article:tag" content="send audio mqtt">
+        
+            <meta property="article:tag" content="esp32 audio">
+        
+            <meta property="article:tag" content="microphone arduino">
+        
+            <meta property="article:tag" content="jagawana">
+        
+            <meta property="article:tag" content="bangkit 2021">
+        
+        <meta property="article:author" content="Nico Renaldo">
+        <meta property="og:url" content="http://localhost:4000/blog/jagawana-iot/" />
+        <meta property="og:image" content="/assets/img/logo/logo.jpg"/>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="/assets/img/logo/favicon.ico" type="image/x-icon">
+        <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="/assets/styles/style.css">
+        <link rel="stylesheet" href="/assets/styles/main.css">
+        <link rel="stylesheet preload" as="style" type="text/css" href="/assets/styles/fonts.css" crossorigin="anonymous">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G3EL905KFD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G3EL905KFD');
+</script>
+    </head>
+    <body id="body">
+        
+        <div class="all">
+            <div class="navbar" id="navbar">
+  <div class="dropdown">
+    <a href="javascript:void(0);" class="icon dropdown-toggle" data-toggle="dropdown" onclick="navbar()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <div class="dropdown-menu" id="myTopnav">
+      <a href="/" target="_self">Home</a>
+      <a href="/#about" target="_self">About</a>
+      <a href="/#experience" target="_self">Experience</a>
+      <a href="/#projects" target="_self">Projects</a>
+      <a href="/blogs/" target="_self">Blogs</a>
+    </div>
+  </div>
+
+  <div class="switch-wrapper">
+    <div class="sun"></div>
+    <div class="toggle-wrapper">
+      <input id="switch" type="checkbox" />
+      <label for="switch" id="toggle">Toggle</label>
+    </div>
+    <div class="moon"></div>
+  </div>
+</div>
+            <section class="project-post">
+                <div class="page-title">
+                    <h1>Jagawana — Internet of Things</h1>
+                    <span>June 12 2021</span>
+                </div>
+                <div class="content">
+                    <p class="quote"></p>
+                    <p><img src="/assets/img/project/featured-jagawana.jpg" alt="Soundwave" class="img-responsive" /></p>
+
+<p class="quote">
+    Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time. We deployed a Machine Learning Model to process the sounds taken by the sensor, then the model will identify the sounds into various categories, such as chainsaws, trucks, gunshot, and burning sounds. We will be using Android App to monitor and notify the user if suspicious events were happening in the forest, the user could also be able to hear the sound itself to ensure the results are correct. <a href="http://localhost:4000/blog/jagawana-overview/">Link to the project overview</a>.
+</p>
+
+<p>One of the keys to our project is how we will gather audio from the forest, our solution involves creating a Wide Sensor Network that spans across the forest. This idea is popularly used by many researchers, especially in detecting forest fires using a smoke detector.</p>
+
+<p>Our idea is to deploy the sensor device along with microphones, battery, solar panel, SD card, and an RF transmitter. Ideally, the sensor device would be able to detect and record sounds, have a long long battery life, and communicate far away using an RF transmitter. This may sound complex and overwhelming, so many engineering fields are involved from programming, electronics, and also telemetry. Thus, we are trying to keep it simple and not go into the details soon.</p>
+
+<div class="separator" role="separator">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<h3 id="the-device">The Device</h3>
+<p>The device itself has several specifications, first off it must have enough flash memory to transmit data and do simple filtering for sounds. The general option would be ESP32 and Teensy, both are powerful and cheap prototype microcontrollers and popularly used by many hobbyists. There is also the alternative to using Raspberry Pi, but the costs of material will jump out too much.</p>
+
+<p>The device will be deployed in a remote location, which means the device needs to be sustainable. Our solution is by using a solar panel and a battery. We haven’t started our research on this, so I will skip the details.</p>
+
+<h3 id="the-sounds">The Sounds</h3>
+<p>Our device will be the ears, listening to every sound inside the forest. We haven’t found a suitable microphone module for the job, as the microphone is supposed to hear from distances (~100m — 1000m) to be efficient and cutting down the number of devices needed. Our prototyping model uses a generic microphone module such as MAX9814 (Analog) or INMP44 (I2S).</p>
+
+<p>To prevent overloading the memory and transmission, we need a mechanism to prevent any sounds to trigger the device. We are proposing the idea to use the same mechanism as Amazon’s Alexa and other home devices. Alexa didn’t send any audio data to the cloud until the wake word is called. The way it works is by having Alexa listening all the time, storing a short audio data into the buffer memory, process it whether the wake word is called or not, if not then Alexa will record a short audio data again replacing the buffer memory. Using this mechanism, Alexa won’t run out of data even if it listens to our conversation all day long.</p>
+
+<p>The general idea would look like the flowchart below.</p>
+
+<p><img src="/assets/img/blogs/iot-flowchart.png" alt="Diagram Flow of Passive Listening" class="img-responsive" />
+<em>Diagram Flow of Passive Listening</em></p>
+
+<p>Our first plan is to use a simple CNN model fitted into our device, we haven’t researched that area yet so we proposed a plan B which is by analyzing the audio data and use the chainsaw frequency as the trigger. Chainsaw sounds dominate in frequency bands between 500 Hz and 8 kHz, by extracting the audio data into Mel Spectrogram, we could see the uniqueness of chainsaw sounds.</p>
+
+<p><img src="/assets/img/blogs/iot-comparison.jpg" alt="Comparison of Different Sounds" class="img-responsive" />
+<em>Comparison of Different Sounds</em></p>
+
+<h3 id="the-network">The Network</h3>
+<p>This is the hardest part of the system. In real-life situations, especially in rural areas like forests, there will be no cellular signal at all. To communicate with each other, we are going to use an RF transmitter especially looking at the LoRaWAN module. LoRa is communication technology, just like WiFi and Bluetooth, that specializes in long-range and low-power communication. Using LoRa, devices could communicate up to 2 kilometers through obstacles, and up to 20 km with a line of sight.</p>
+
+<p>Creating a sensor network is not as simple as that, to cover a whole area with as few sensors as possible, there needs to be a network architecture that is effective and robust. Again, this topic is really heavy and discussed in many papers like <a href="https://www.sciencedirect.com/science/article/pii/S0198971512000300">this</a>, <a href="https://www.researchgate.net/figure/The-proposed-architecture-for-forest-fire-detection_fig1_305773926">this</a>, and <a href="https://ieeexplore.ieee.org/document/5691483">this one</a>. We proposed a simple model to illustrate and simplify the detail, but the real-life deployment will need a more complex model to effectively be used.</p>
+
+<p><img src="/assets/img/project/featured-jagawana.jpg" alt="Simple Illustration of Sensor Network
+" class="img-responsive" />
+<em>Simple Illustration of Sensor Network</em></p>
+
+<div class="separator" role="separator">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<h2 id="current-progress">Current Progress</h2>
+<p>Limited by time and budget, on this 1 month project we decided to only develop our device in the home environment, using ESP32, MAX9814 microphone, and an SD card reader.</p>
+
+<p>The device would communicate with mosquitto broker on my laptop using MQTT, and the laptop as the gateway will forward the audio data to Google Cloud Platform for further processing. I have documented the code on my Github repo here.</p>
+
+<p>The requirement I set for our prototype board is :</p>
+<ol>
+  <li>Record and Store audio data to .wav format in SD card</li>
+  <li>Read the data and send it using MQTT</li>
+</ol>
+
+<div class="separator" role="separator">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<h3 id="record-and-store-audio-data">Record and Store Audio Data</h3>
+<p>First off, there are two kinds of microphone modules out there, the analog one like MAX9814, and the one with I2S support like INMP441. I bought the MAX9814 without doing research beforehand, but I would recommend you guys to try the one with I2S support.</p>
+
+<p>Recording audio data is a challenge itself, but to store the audio data has a trick on it’s own. There is a thing called <a href="https://www.embedded.com/introduction-to-direct-memory-access/">DMA</a> which stands for Direct Memory Access, this will allow us to write the audio data directly to memory without any interference from the CPU. This will allow our program and CPU not to freeze due to saving data to memory. I was originally to program the ESP32 using Micropython, but the <a href="https://github.com/miketeachman/micropython-esp32-i2s-examples">library</a> I found only supports DMA and I2S, so me and my analog microphone can’t use the library. After gone through testing and searching, I found this <a href="https://github.com/MhageGH/esp32_SoundRecorder/">C++ library</a> that do support analog microphone for DMA, and so I modified the code to communicate with my MQTT broker.</p>
+
+<p>The code on the repo itself is quite explanatory, it has several configuration code to adjust the parameter like duration and sampling rate. I’m trying to adjust it to my dataset which is using 8-bit resolution and 16KHz sampling rate but the audio file got distorted, I’m still trying to figure out the solution.</p>
+
+<h3 id="sending-data-to-mqtt">Sending Data to MQTT</h3>
+<p>MQTT is a lightweight communication protocol, popularly used in microcontrollers. Here is a great <a href="https://medium.com/@onur.dundar1/mqtt-part-i-understanding-mqtt-aade455baec9">article about MQTT</a>. Using C++ and Arduino IDE, I’m using the most popular MQTT library out there from <a href="https://github.com/knolleary/pubsubclient">PubSubClient</a>.</p>
+
+<p>Although it’s not intended to be, I’m going to send my audio data through MQTT for the sake of fast prototyping. Through my experiment, a 10-second audio data (44100Hz Sampling Rate) takes about 800 KB of memory. The PubSubClient has a maximum packet size of 256 bytes by default, there is just no way I could send the full data in one go. What I had to do is to read and send the audio data chunk by chunk, the data will go to a buffer variable and replaced by a new chunk and another.</p>
+
+<p>I first started reading and sending a chunk of 64 bytes, the whole file takes 147-second with a total of 13782 packets sent. It takes too much time since the buffer size is too small, I ended up editing the library’s maximum packet size, and change the buffer size to 512 bytes. The file is successfully sent in 23-second with a total of 1723 sent.</p>
+
+<p>To receive the data properly on the other side, I had the ESP32 send status using MQTT to begin receiving and saving the data to a file. You can check the code on my repo link below.</p>
+
+<div class="separator" role="separator">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<h2 id="last-words">Last Words</h2>
+<p>The prototype is still in the early stages, there are many things to improve or even hasn’t started yet. This project really challenges me since I haven’t worked with audio data before on a microcontroller. Formatting and saving data is a big challenge. Transmitting the audio data through WiFi is already troublesome enough, but doing the same thing on LoRa network will be even more challenging.</p>
+
+<p>Please give suggestions if you have any tips to solve the unending problems on this project. I hope I can see the end of this project. Feel free to ask anything if you want to replicate this project.</p>
+
+<div class="separator" role="separator">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p><a href="https://github.com/nicorenaldo/jagawana-iot">My Code on Github</a><br />
+<a href="https://github.com/MhageGH/esp32_SoundRecorder/">C++ Analog Microphone Library</a></p>
+
+                </div>
+                <div class="tags">
+                    
+                        <span class="item">Bangkit</span>
+                    
+                        <span class="item">Jagawana</span>
+                    
+                        <span class="item">Esp32 Audio</span>
+                    
+                        <span class="item">Record Audio</span>
+                    
+                        <span class="item">Mqtt Audio</span>
+                    
+                        <span class="item">record audio</span>
+                    
+                        <span class="item">send audio mqtt</span>
+                    
+                        <span class="item">esp32 audio</span>
+                    
+                        <span class="item">microphone arduino</span>
+                    
+                        <span class="item">jagawana</span>
+                    
+                        <span class="item">bangkit 2021</span>
+                    
+                </div>
+            </section>
+        </div>
+    </body>
+    <footer class="footer">
+    <div class="copyright">
+      <div class="top">
+        <span>Inspired by</span>
+      </div>
+      <div class="bottom">
+        <a href="https://github.com/bchiang7/bchiang7.github.io">
+          <span style="color: #007bff !important;">here</span>
+        </a>
+      </div>
+    </div>
+    <div class="links">
+  
+      <a href="mailto:nicorenald@gmail.com" target="_blank" title="Instagram">
+        <span class="text">Email</span>
+      </a>
+      <a href="https://www.linkedin.com/in/nicorenaldo/" target="_blank" title="Instagram">
+        <span class="text">Linkedin</span>
+      </a>
+      <a href="https://github.com/nicorenaldo/" target="_blank" title="Instagram">
+        <span class="text">Github</span>
+      </a>
+      <a href="https://www.kaggle.com/nicorenaldo" target="_blank" title="Kaggle">
+        <span class="text">Kaggle</span>
+      </a>
+      <a href="https://nicorenaldo.medium.com/" target="_blank" title="Medium">
+        <span class="text">Medium</span>
+      </a>
+    </div>
+    <!-- import the webpage's javascript file -->
+    <script src="/assets/scripts/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </footer>
+</html>

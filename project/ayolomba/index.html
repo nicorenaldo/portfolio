@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <title>AyoLomba!</title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:site_name" content="Nico's Portfolio">
+        <meta property="og:title" content="AyoLomba!">
+        <meta property="og:description" content="My project for Gemastik XIII Competition, my team created a web platform using Django to show and filter competition based on user's preference.">
+        <meta itemprop="keywords" content="Django,HTML,SQL"/>
+        
+            <meta property="article:tag" content="Django">
+        
+            <meta property="article:tag" content="HTML">
+        
+            <meta property="article:tag" content="SQL">
+        
+        <meta property="article:author" content="Nico Renaldo">
+        <meta property="og:url" content="http://localhost:4000/project/ayolomba/" />
+        <meta property="og:image" content="/assets/img/ayolomba-about.jpg"/>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="/assets/img/logo/favicon.ico" type="image/x-icon">
+        <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="/assets/styles/style.css">
+        <link rel="stylesheet" href="/assets/styles/main.css">
+        <link rel="stylesheet preload" as="style" type="text/css" href="/assets/styles/fonts.css" crossorigin="anonymous">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G3EL905KFD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G3EL905KFD');
+</script>
+    </head>
+    <body id="body">
+        <div class="all">
+            <div class="navbar" id="navbar">
+  <div class="dropdown">
+    <a href="javascript:void(0);" class="icon dropdown-toggle" data-toggle="dropdown" onclick="navbar()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <div class="dropdown-menu" id="myTopnav">
+      <a href="/" target="_self">Home</a>
+      <a href="/#about" target="_self">About</a>
+      <a href="/#experience" target="_self">Experience</a>
+      <a href="/#projects" target="_self">Projects</a>
+      <a href="/blogs/" target="_self">Blogs</a>
+    </div>
+  </div>
+
+  <div class="switch-wrapper">
+    <div class="sun"></div>
+    <div class="toggle-wrapper">
+      <input id="switch" type="checkbox" />
+      <label for="switch" id="toggle">Toggle</label>
+    </div>
+    <div class="moon"></div>
+  </div>
+</div>
+            <section class="project-post">
+                <div class="page-title tags">
+                    <h1>AyoLomba!</h1>
+                    <span>June 12 2021</span>
+                    <span style="margin: 0 0.5rem">-</span>
+                    
+                        <span class="item">Django</span>
+                    
+                        <span class="item">HTML</span>
+                    
+                        <span class="item">SQL</span>
+                    
+                </div>
+                <div class="content">
+                    <p class="quote">My project for Gemastik XIII Competition, my team created a web platform using Django to show and filter competition based on user's preference.</p>
+                    <h2 id="project-brief">Project Brief</h2>
+<p><strong>AyoLomba!</strong> is a web platform to accomodate event organizers and students across Indonesia to post and search competitions, scholarships, and webinars with better experience. Members can find the event they want based on their preferences, AyoLomba! also helps out organizers to reach their audience, using sleek UI and many features to help out both parties.
+<br /></p>
+
+<p><strong>Link to <a href="https://ayolomba-id.herokuapp.com/">project demo</a></strong></p>
+
+<hr />
+
+<p><strong>AyoLomba!</strong> is created using <strong>Django</strong> and hosted on <strong>Heroku</strong>. While there are many option to find information about events, most of them rely on social media like Instagram and Line that doesn’t have any filtering feature. This is why we are motivated to create a dedicated platform using web and android app, that solve this irritable issue. This project is made prior to the emerging giant <strong>Sejuta Cita</strong> which holds the same concept with us.</p>
+
+<h2 id="photos">Photos</h2>
+
+<div class="carousel-container">
+      
+    <!-- Expanded image -->
+    <img id="expandedImg" src="/assets/img/project/ayolomba-form.jpg" class="expanded-img" />
+  
+    <!-- Image text -->
+    <div id="imgtext">Posting Form</div>
+      <!-- Left and right controls -->
+  <!--   
+    <a class="prev-button" href="#demo" data-slide="prev" onclick="plusSlides(-1)"><</a>
+    <a class="next-button" href="#demo" data-slide="next" onclick="plusSlides(1)">></a> -->
+      <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a> -->
+  </div>
+
+<p><!-- The grid: four columns --></p>
+<div class="carousel">
+      <div class="items">
+          
+          <div class="item">
+              <img src="/assets/img/project/ayolomba-form.jpg" alt="Posting Form" class="item-img" onclick="carouselchoose(this);" />
+          </div>
+          
+          <div class="item">
+              <img src="/assets/img/project/ayolomba-search2.jpg" alt="Browse Page" class="item-img" onclick="carouselchoose(this);" />
+          </div>
+          
+          <div class="item">
+              <img src="/assets/img/project/ayolomba-lomba.jpg" alt="Event Details" class="item-img" onclick="carouselchoose(this);" />
+          </div>
+          
+          <div class="item">
+              <img src="/assets/img/project/ayolomba-about.jpg" alt="About Us" class="item-img" onclick="carouselchoose(this);" />
+          </div>
+          
+      </div>
+  </div>
+
+
+                </div>
+            </section>
+        </div>
+    </body>
+    <footer class="footer">
+    <div class="copyright">
+      <div class="top">
+        <span>Inspired by</span>
+      </div>
+      <div class="bottom">
+        <a href="https://github.com/bchiang7/bchiang7.github.io">
+          <span style="color: #007bff !important;">here</span>
+        </a>
+      </div>
+    </div>
+    <div class="links">
+  
+      <a href="mailto:nicorenald@gmail.com" target="_blank" title="Instagram">
+        <span class="text">Email</span>
+      </a>
+      <a href="https://www.linkedin.com/in/nicorenaldo/" target="_blank" title="Instagram">
+        <span class="text">Linkedin</span>
+      </a>
+      <a href="https://github.com/nicorenaldo/" target="_blank" title="Instagram">
+        <span class="text">Github</span>
+      </a>
+      <a href="https://www.kaggle.com/nicorenaldo" target="_blank" title="Kaggle">
+        <span class="text">Kaggle</span>
+      </a>
+      <a href="https://nicorenaldo.medium.com/" target="_blank" title="Medium">
+        <span class="text">Medium</span>
+      </a>
+    </div>
+    <!-- import the webpage's javascript file -->
+    <script src="/assets/scripts/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </footer>
+</html>

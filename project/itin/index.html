@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <title>Itin</title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:site_name" content="Nico's Portfolio">
+        <meta property="og:title" content="Itin">
+        <meta property="og:description" content="Itin is a trip planning web application to easily make, share, and browse itineraries.  Users could make their own itinerary, share it with friends and public, and take inspiration from others.">
+        <meta itemprop="keywords" content="Flask,Nuxt.js"/>
+        
+            <meta property="article:tag" content="Flask">
+        
+            <meta property="article:tag" content="Nuxt.js">
+        
+        <meta property="article:author" content="Nico Renaldo">
+        <meta property="og:url" content="http://localhost:4000/project/itin/" />
+        <meta property="og:image" content="/assets/img/itin-text.jpg"/>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="/assets/img/logo/favicon.ico" type="image/x-icon">
+        <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="/assets/styles/style.css">
+        <link rel="stylesheet" href="/assets/styles/main.css">
+        <link rel="stylesheet preload" as="style" type="text/css" href="/assets/styles/fonts.css" crossorigin="anonymous">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G3EL905KFD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G3EL905KFD');
+</script>
+    </head>
+    <body id="body">
+        <div class="all">
+            <div class="navbar" id="navbar">
+  <div class="dropdown">
+    <a href="javascript:void(0);" class="icon dropdown-toggle" data-toggle="dropdown" onclick="navbar()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <div class="dropdown-menu" id="myTopnav">
+      <a href="/" target="_self">Home</a>
+      <a href="/#about" target="_self">About</a>
+      <a href="/#experience" target="_self">Experience</a>
+      <a href="/#projects" target="_self">Projects</a>
+      <a href="/blogs/" target="_self">Blogs</a>
+    </div>
+  </div>
+
+  <div class="switch-wrapper">
+    <div class="sun"></div>
+    <div class="toggle-wrapper">
+      <input id="switch" type="checkbox" />
+      <label for="switch" id="toggle">Toggle</label>
+    </div>
+    <div class="moon"></div>
+  </div>
+</div>
+            <section class="project-post">
+                <div class="page-title tags">
+                    <h1>Itin</h1>
+                    <span>June 12 2021</span>
+                    <span style="margin: 0 0.5rem">-</span>
+                    
+                        <span class="item">Flask</span>
+                    
+                        <span class="item">Nuxt.js</span>
+                    
+                </div>
+                <div class="content">
+                    <p class="quote">Itin is a trip planning web application to easily make, share, and browse itineraries.  Users could make their own itinerary, share it with friends and public, and take inspiration from others.</p>
+                    <h2 id="project-brief">Project Brief</h2>
+<p><strong>itin</strong> is a trip planning web application to easily make, share, and browse itineraries.  Users could make their own itinerary, share it with friends and public, and take inspiration from others.
+<br /></p>
+
+<p><strong>Link to <a href="https://itin.netlify.app/">project demo</a></strong></p>
+
+<hr />
+
+<p><strong>Itin</strong> is created using <strong>Flask</strong> for backend, and <strong>Nuxt.js</strong> for frontend side. Most people plan their trip using notepad, google search and maps. This old-fashioned way of making itinerary is inflexible, having to switch to many applications and making changes burdensome. Itin provides a way for people to make their itinerary in one place, where user could search destinations, write notes, see suggestions and sharing it to friends.</p>
+
+<h2 id="photos">Photos</h2>
+
+<div class="carousel-container">
+      
+    <!-- Expanded image -->
+    <img id="expandedImg" src="/assets/img/project/itin-create.jpg" class="expanded-img" />
+  
+    <!-- Image text -->
+    <div id="imgtext">Creating Itinerary</div>
+      <!-- Left and right controls -->
+  <!--   
+    <a class="prev-button" href="#demo" data-slide="prev" onclick="plusSlides(-1)"><</a>
+    <a class="next-button" href="#demo" data-slide="next" onclick="plusSlides(1)">></a> -->
+      <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a> -->
+  </div>
+
+<p><!-- The grid: four columns --></p>
+<div class="carousel">
+      <div class="items">
+          
+          <div class="item">
+              <img src="/assets/img/project/itin-create.jpg" alt="Creating Itinerary" class="item-img" onclick="carouselchoose(this);" />
+          </div>
+          
+          <div class="item">
+              <img src="/assets/img/project/itin-item.png" alt="Itinerary Details" class="item-img" onclick="carouselchoose(this);" />
+          </div>
+          
+          <div class="item">
+              <img src="/assets/img/project/itin-book.jpg" alt="Booking Order" class="item-img" onclick="carouselchoose(this);" />
+          </div>
+          
+          <div class="item">
+              <img src="/assets/img/project/itin-browse.jpg" alt="Browse Itinerary" class="item-img" onclick="carouselchoose(this);" />
+          </div>
+          
+      </div>
+  </div>
+
+<h2 id="introduction-video">Introduction Video</h2>
+<div class="ytb-embed-container">
+<iframe height="480px" width="854px" class="ytb-embed" src="https://www.youtube.com/embed/QpfyA9de6zk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+                </div>
+            </section>
+        </div>
+    </body>
+    <footer class="footer">
+    <div class="copyright">
+      <div class="top">
+        <span>Inspired by</span>
+      </div>
+      <div class="bottom">
+        <a href="https://github.com/bchiang7/bchiang7.github.io">
+          <span style="color: #007bff !important;">here</span>
+        </a>
+      </div>
+    </div>
+    <div class="links">
+  
+      <a href="mailto:nicorenald@gmail.com" target="_blank" title="Instagram">
+        <span class="text">Email</span>
+      </a>
+      <a href="https://www.linkedin.com/in/nicorenaldo/" target="_blank" title="Instagram">
+        <span class="text">Linkedin</span>
+      </a>
+      <a href="https://github.com/nicorenaldo/" target="_blank" title="Instagram">
+        <span class="text">Github</span>
+      </a>
+      <a href="https://www.kaggle.com/nicorenaldo" target="_blank" title="Kaggle">
+        <span class="text">Kaggle</span>
+      </a>
+      <a href="https://nicorenaldo.medium.com/" target="_blank" title="Medium">
+        <span class="text">Medium</span>
+      </a>
+    </div>
+    <!-- import the webpage's javascript file -->
+    <script src="/assets/scripts/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </footer>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Jagawana — Machine Learning In Depth</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:site_name" content="Nico's Portfolio">
+        <meta property="og:title" content="Jagawana — Machine Learning In Depth">
+        <meta property="og:description" content="What is sound and how do machine learning analyze it.">
+        <meta itemprop="keywords" content="Bangkit,Jagawana,Audio Classification,Chainsaws,Illegal Logging" />
+        
+            <meta property="article:tag" content="Bangkit">
+        
+            <meta property="article:tag" content="Jagawana">
+        
+            <meta property="article:tag" content="Audio Classification">
+        
+            <meta property="article:tag" content="Chainsaws">
+        
+            <meta property="article:tag" content="Illegal Logging">
+        
+        <meta property="article:author" content="Nico Renaldo">
+        <meta property="og:url" content="http://localhost:4000/blog/jagawana-machine-learning/" />
+        <meta property="og:image" content="/assets/img/logo/logo.jpg"/>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="/assets/img/logo/favicon.ico" type="image/x-icon">
+        <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="/assets/styles/style.css">
+        <link rel="stylesheet" href="/assets/styles/main.css">
+        <link rel="stylesheet preload" as="style" type="text/css" href="/assets/styles/fonts.css" crossorigin="anonymous">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G3EL905KFD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G3EL905KFD');
+</script>
+    </head>
+    <body id="body">
+        
+        <div class="all">
+            <div class="navbar" id="navbar">
+  <div class="dropdown">
+    <a href="javascript:void(0);" class="icon dropdown-toggle" data-toggle="dropdown" onclick="navbar()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <div class="dropdown-menu" id="myTopnav">
+      <a href="/" target="_self">Home</a>
+      <a href="/#about" target="_self">About</a>
+      <a href="/#experience" target="_self">Experience</a>
+      <a href="/#projects" target="_self">Projects</a>
+      <a href="/blogs/" target="_self">Blogs</a>
+    </div>
+  </div>
+
+  <div class="switch-wrapper">
+    <div class="sun"></div>
+    <div class="toggle-wrapper">
+      <input id="switch" type="checkbox" />
+      <label for="switch" id="toggle">Toggle</label>
+    </div>
+    <div class="moon"></div>
+  </div>
+</div>
+            <section class="project-post">
+                <div class="page-title">
+                    <h1>Jagawana — Machine Learning In Depth</h1>
+                    <span>June 12 2021</span>
+                </div>
+                <div class="content">
+                    <p class="quote"></p>
+                    <p><img src="/assets/img/blogs/soundwave.png" alt="Soundwave" class="img-responsive" /></p>
+
+<p class="quote">
+    Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time. We deployed a Machine Learning Model to process the sounds taken by the sensor, then the model will identify the sounds into various categories, such as chainsaws, trucks, gunshot, and burning sounds. We will be using Android App to monitor and notify the user if suspicious events were happening in the forest, the user could also be able to hear the sound itself to ensure the results are correct. <a href="http://localhost:4000/blog/jagawana-overview/">Link to the project overview</a>.
+</p>
+
+<p>Our Machine Learning Model main goal is to Classify Forests Ambience Sounds taken by the sensors. Our priority is to identify chainsaw sounds and alert users from Android App. Though identifying other sounds is as important too. Being able to identify other sounds may enable us to map out fauna habitats, and for further research data.</p>
+
+<div class="separator" role="separator">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<h2 id="resources">Resources</h2>
+<h3 id="where-to-develop">Where to Develop</h3>
+<p>We developed our model using Kaggle Notebook, you can check it on this <a href="https://www.kaggle.com/nicorenaldo/jagawana-v2-forest-logging-detection">link</a>. Developing the model in the Kaggle is really helpful since the dataset is saved on Kaggle Server, so we don’t need to download it over and over again like in Google Colab.</p>
+
+<h3 id="datasets">Datasets</h3>
+<p>The dataset we are using are :</p>
+
+<ol>
+  <li><a href="https://www.kaggle.com/mmoreaux/environmental-sound-classification-50">ESC-50</a> : Chainsaw and crackling fire sounds</li>
+  <li><a href="https://www.kaggle.com/chrisfilo/urbansound8k">Urbansound8k</a> : Gunshot sounds</li>
+  <li><a href="https://research.google.com/audioset/">Google’s Audioset</a> : Chainsaw, crackling fire, and gunshot sounds</li>
+</ol>
+
+<p>Google’s Audioset data consists of CSV data with youtube links, intervals, and categories. To actually get the audio data you need to do some more work, I use the script from <a href="https://github.com/aoifemcdonagh/audioset-processing">here</a> which I modified to add a download limiter, you can check the my modificated repo <a href="https://github.com/nicorenaldo/audioset-processing">here</a>.</p>
+
+<h3 id="paper-references">Paper References</h3>
+<p><a href="https://arxiv.org/abs/1908.07517">AI for Earth: Rainforest Conservation by Acoustic Surveillance</a>
+<a href="https://arxiv.org/abs/1810.09078">Our Practice Of Using Machine Learning To Recognize Species By Voice</a></p>
+
+<div class="separator" role="separator">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<h2 id="general-approach">General Approach</h2>
+<p>There are many image recognition examples in online courses and tutorials. The way machine learning classifies an image is by analyzing the pixel value as a series. Based on this analogy, we should be able to analyze sounds based on the amplitude as a time series, but this is actually not the case.</p>
+
+<p><img src="/assets/img/blogs/soundwave-mel.jpeg" alt="Soundwave" class="img-responsive" /></p>
+
+<p>A waveform is an amplitude measurement put in a time series. There are many disadvantages to analyze the waveform, the data is big and messy, and the machine learning model doesn’t perform well. The way around it is by analyzing the audio data and turn it into features, by analyzing it on the frequency domain (rather than amplitude) using math. In our experiment, we are using the <a href="https://towardsdatascience.com/getting-to-know-the-mel-spectrogram-31bca3e2d9d0">Mel Spectrogram</a> feature, this feature basically summarizes the waveform into a set of coefficients used in Mel Spectrogram and can be plotted like the image above. Using Mel Spectrogram which has less size than the actual waveform, we can train our model faster and get better performance too.</p>
+
+<p>There are other features that we can extract from a waveform, like normal Spectrogram, MFCC, and many else. Here is a reference you can use to learn more about <a href="https://towardsdatascience.com/audio-deep-learning-made-simple-part-1-state-of-the-art-techniques-da1d3dff2504">what is sound and how it is digitized</a>.</p>
+
+<h2 id="machine-learning-model">Machine Learning Model</h2>
+<p>The most common approach use features like Mel Spectrogram and MFCC, but how about the model? Unexpectedly, the common CNN model used on image classification actually performs well on this data and has been a popularly used approach to classify audio.</p>
+
+<p>In this project, we use the VGG16 model as our baseline. <a href="https://neurohive.io/en/popular-networks/vgg16/">VGG16</a> is a popular CNN model used on image classification, the model achieves 92.7% top-5 test accuracy in ImageNet, which is a dataset of over 14 million images belonging to 1000 classes. VGG16 is consisted of 16 layers, with over 140M parameters and a size of 533MB. This makes training and deploying the model a tiresome task.</p>
+
+<p>Our team did a modification to the model quite similar to <a href="https://arxiv.org/abs/1908.07517">this paper</a>. Our augmented model has only 1M parameters, with a size of 15MB. The modification on the paper made are as follows :</p>
+<ol>
+  <li>Adding a Batch Normalization layer following each convolutional layer. Batch Normalization allows much higher learning rates and is less sensitive to initialization.</li>
+  <li>A global pooling layer replaces a flattened layer. Adding the global pooling layer not only helps filter the features but also makes the network adapt to different sizes of input spectrograms.</li>
+  <li>The 4096-unit FC layers are reduced to 256-unit FC layers.</li>
+</ol>
+
+<p>Along with our modification as follows :</p>
+<ol>
+  <li>Adding dropout layer following each convolutional block.</li>
+  <li>Reducing the convolutional block from 4 to 3 blocks.</li>
+</ol>
+
+<p>Our final model can be seen <a href="https://postimg.cc/RJ7wJjwT">here</a>.</p>
+
+<h2 id="preprocessing-and-training">Preprocessing and Training</h2>
+<p>After the model, there comes the preprocessing. The data we are using comes from 3 different sources and they have different characteristics too.</p>
+
+<ol>
+  <li>ESC-50; we are using the chainsaw and crackling fire sound from this dataset, all the audio data is 5 seconds long, with only 40 recordings for each class.</li>
+  <li>Urbansound5k; we are using the gunshot sound from this dataset, there are 374 recordings and the length varies from 1 to 4 seconds.</li>
+  <li>Google Audioset; all 3 classes exist here, the dataset itself is a list of associated YouTube ID, start time, end time, and class labels in a CSV file. To use the dataset as audio data, we need to download the recordings from youtube using a script that I have modified <a href="https://github.com/nicorenaldo/audioset-processing">here</a>.</li>
+</ol>
+
+<p>To train the model, we need to have the same dimension of audio data, since we have various length of data, we decided to use only 2 seconds of recordings at a time. To get such data, we have to do some preprocessing.</p>
+<ol>
+  <li>ESC-50, we use a shifting windowing to trim 4 clips of 2 seconds from the original clip, totaling 40x4 = 160 clips for the 2 classes.</li>
+  <li>Urbansound5k, we are padding the recording with a length less than 2 seconds, and trimming the one with a length of more than 2 seconds.</li>
+  <li>The script to extract audio from youtube will download 10 seconds recordings. Using shifting windowing we will get 9 clips of 2 seconds from the original clip.</li>
+</ol>
+
+<p>In our experiment, we are using 320 clips for each classes. The data which is still in the waveform then will be processed into Mel Spectrogram and shuffled into the train and validation dataset.</p>
+
+<p>Training our model from scratch, the model got stopped by the callback after 15 epochs with results below.</p>
+
+<p><img src="/assets/img/blogs/soundwave-training.jpg" alt="Training History" class="img-responsive" />
+<em>Accuracy &amp; Loss History and Confusion Matrix</em></p>
+
+<p>From the confusion matrix, we could see the model perform quite nicely for all 3 classes.</p>
+
+<h2 id="inference--predicting">Inference / Predicting</h2>
+<p>We are using 2 seconds audio to train our model, but how do we analyze audio that has a different length or even through streaming? You could actually pass the whole audio data to the model, that is because the model could use any input size, but this method will perform worse than other methods. Another way to do it is by predicting a window of n seconds audio, and shifting it 1 second at a time, this method really works well but comes at a price, the computational needed will be huge.</p>
+
+<p>What our team proposed is by reducing the noise from an audio clip, we could separate/highlight/isolate the target sounds that we want to hear. The target sounds will have a set of intervals, and the model will predict each highlighted clip separately. You can see the illustration of the method in the image below. After reducing the noise, the output results into 5 highlighted clips.</p>
+
+<p><img src="/assets/img/blogs/soundwave-clip.png" alt="Soundwave Clipping" class="img-responsive" />
+<em>Before and After Highlighting the Sounds</em></p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>There are still many aspects that could be improved, especially researching different model architecture, using a better dataset, and using a different audio feature like MFCC. Feel free to ask questions and using my Kaggle notebook as a reference, I hope my work on this project could help someone else in researching this topic.</p>
+
+                </div>
+                <div class="tags">
+                    
+                        <span class="item">Bangkit</span>
+                    
+                        <span class="item">Jagawana</span>
+                    
+                        <span class="item">Audio Classification</span>
+                    
+                        <span class="item">Chainsaws</span>
+                    
+                        <span class="item">Illegal Logging</span>
+                    
+                </div>
+            </section>
+        </div>
+    </body>
+    <footer class="footer">
+    <div class="copyright">
+      <div class="top">
+        <span>Inspired by</span>
+      </div>
+      <div class="bottom">
+        <a href="https://github.com/bchiang7/bchiang7.github.io">
+          <span style="color: #007bff !important;">here</span>
+        </a>
+      </div>
+    </div>
+    <div class="links">
+  
+      <a href="mailto:nicorenald@gmail.com" target="_blank" title="Instagram">
+        <span class="text">Email</span>
+      </a>
+      <a href="https://www.linkedin.com/in/nicorenaldo/" target="_blank" title="Instagram">
+        <span class="text">Linkedin</span>
+      </a>
+      <a href="https://github.com/nicorenaldo/" target="_blank" title="Instagram">
+        <span class="text">Github</span>
+      </a>
+      <a href="https://www.kaggle.com/nicorenaldo" target="_blank" title="Kaggle">
+        <span class="text">Kaggle</span>
+      </a>
+      <a href="https://nicorenaldo.medium.com/" target="_blank" title="Medium">
+        <span class="text">Medium</span>
+      </a>
+    </div>
+    <!-- import the webpage's javascript file -->
+    <script src="/assets/scripts/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </footer>
+</html>

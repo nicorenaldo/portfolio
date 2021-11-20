@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <title>Jagawana</title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:site_name" content="Nico's Portfolio">
+        <meta property="og:title" content="Jagawana">
+        <meta property="og:description" content="A wide sensor network system deployed in the forests to prevent ilegal logging using machine learning.">
+        <meta itemprop="keywords" content="Tensorflow,Google Cloud Platform,ESP32"/>
+        
+            <meta property="article:tag" content="Tensorflow">
+        
+            <meta property="article:tag" content="Google Cloud Platform">
+        
+            <meta property="article:tag" content="ESP32">
+        
+        <meta property="article:author" content="Nico Renaldo">
+        <meta property="og:url" content="http://localhost:4000/project/jagawana/" />
+        <meta property="og:image" content="/assets/img/jagawana-illustration.png"/>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="/assets/img/logo/favicon.ico" type="image/x-icon">
+        <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="/assets/styles/style.css">
+        <link rel="stylesheet" href="/assets/styles/main.css">
+        <link rel="stylesheet preload" as="style" type="text/css" href="/assets/styles/fonts.css" crossorigin="anonymous">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G3EL905KFD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G3EL905KFD');
+</script>
+    </head>
+    <body id="body">
+        <div class="all">
+            <div class="navbar" id="navbar">
+  <div class="dropdown">
+    <a href="javascript:void(0);" class="icon dropdown-toggle" data-toggle="dropdown" onclick="navbar()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <div class="dropdown-menu" id="myTopnav">
+      <a href="/" target="_self">Home</a>
+      <a href="/#about" target="_self">About</a>
+      <a href="/#experience" target="_self">Experience</a>
+      <a href="/#projects" target="_self">Projects</a>
+      <a href="/blogs/" target="_self">Blogs</a>
+    </div>
+  </div>
+
+  <div class="switch-wrapper">
+    <div class="sun"></div>
+    <div class="toggle-wrapper">
+      <input id="switch" type="checkbox" />
+      <label for="switch" id="toggle">Toggle</label>
+    </div>
+    <div class="moon"></div>
+  </div>
+</div>
+            <section class="project-post">
+                <div class="page-title tags">
+                    <h1>Jagawana</h1>
+                    <span>June 12 2021</span>
+                    <span style="margin: 0 0.5rem">-</span>
+                    
+                        <span class="item">Tensorflow</span>
+                    
+                        <span class="item">Google Cloud Platform</span>
+                    
+                        <span class="item">ESP32</span>
+                    
+                </div>
+                <div class="content">
+                    <p class="quote">A wide sensor network system deployed in the forests to prevent ilegal logging using machine learning.</p>
+                    <h2 id="project-brief">Project Brief</h2>
+<p>Jagawana is a wide sensor network system deployed in the forests to prevent <strong>ilegal logging</strong>. We use sensors to pick up voices in the forests to monitor what happened in the forest in real-time. We use machine learning to process the sounds taken by the sensor and to identify the sounds into various categories, such as <strong>chainsaws, trucks, gunshot, and burning sounds</strong>. We will be using Android App to monitor and notify the user if suspicious events were happening in the forest.<br />
+<br /></p>
+
+<hr />
+
+<p><br />
+This project combines <strong>machine learning, internet of things, cloud computing, and android application</strong>. This project is part of <a href="https://bangkit.academy/">Bangkit Academy’s Capstone Project</a>. My role in this project involves creating the Machine Learning Model, designing and developing the Google Cloud Architecture, making the IoT prototype, and creating design and illustration.</p>
+
+<p>The machine learning model is developed on Kaggle using <a href="https://www.kaggle.com/mmoreaux/environmental-sound-classification-50">ESC-50 Audio Dataset</a>, <a href="https://www.kaggle.com/chrisfilo/urbansound8k">Urbansound8k Dataset</a>, and <a href="https://research.google.com/audioset/">Google’s Audioset</a>.</p>
+
+<p>We are using ESP32 and Mosquitto Broker to prototype the working device. The Google Cloud Platform then will receive and store the audio data using Pub/Sub as a trigger for the cloud functions to store the data to Cloud Storage and BigQuery. Every audio data inputted will be processed by our machine learning model deployed on the AI Platform. You can see the project overview on image below.</p>
+
+<p><img src="/assets/img/project/jagawana-overview.jpg" alt="Jagawana System Overview" class="img-responsive" />
+<em>Jagawana System Overview</em></p>
+
+<h2 id="photos">Photos</h2>
+
+<div class="carousel-container">
+      
+    <!-- Expanded image -->
+    <img id="expandedImg" src="/assets/img/project/jagawana-illustration.png" class="expanded-img" />
+  
+    <!-- Image text -->
+    <div id="imgtext">Illustration</div>
+      <!-- Left and right controls -->
+  <!--   
+    <a class="prev-button" href="#demo" data-slide="prev" onclick="plusSlides(-1)"><</a>
+    <a class="next-button" href="#demo" data-slide="next" onclick="plusSlides(1)">></a> -->
+      <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a> -->
+  </div>
+
+<p><!-- The grid: four columns --></p>
+<div class="carousel">
+      <div class="items">
+          
+          <div class="item">
+              <img src="/assets/img/project/jagawana-illustration.png" alt="Illustration" class="item-img" onclick="carouselchoose(this);" />
+          </div>
+          
+          <div class="item">
+              <img src="/assets/img/project/featured-jagawana.jpg" alt="Deployed System" class="item-img" onclick="carouselchoose(this);" />
+          </div>
+          
+          <div class="item">
+              <img src="/assets/img/project/jagawana-comparison.jpg" alt="Sound Comparison" class="item-img" onclick="carouselchoose(this);" />
+          </div>
+          
+          <div class="item">
+              <img src="/assets/img/project/jagawana-device.png" alt="IoT Device" class="item-img" onclick="carouselchoose(this);" />
+          </div>
+          
+      </div>
+  </div>
+
+<h2 id="introduction-video">Introduction Video</h2>
+<div class="ytb-embed-container">
+<iframe height="480px" width="854px" class="ytb-embed" src="https://www.youtube.com/embed/nLUPU1pUyE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<h2 id="related-links">Related Links</h2>
+<p>I made a medium stories explaining the project in details. The github repo link can be seen on the About Jagawana stories.</p>
+<ul>
+  <li><a href="https://nicorenaldo.medium.com/detecting-chainsaws-in-forest-with-machine-learning-jagawana-989fd345784">About Jagawana</a></li>
+  <li><a href="https://nicorenaldo.medium.com/jagawana-machine-learning-in-depth-6ea66a45d6b2">ML in Depth</a></li>
+  <li><a href="https://nicorenaldo.medium.com/jagawana-internet-of-things-511d63e48349">IoT in Depth</a></li>
+</ul>
+
+                </div>
+            </section>
+        </div>
+    </body>
+    <footer class="footer">
+    <div class="copyright">
+      <div class="top">
+        <span>Inspired by</span>
+      </div>
+      <div class="bottom">
+        <a href="https://github.com/bchiang7/bchiang7.github.io">
+          <span style="color: #007bff !important;">here</span>
+        </a>
+      </div>
+    </div>
+    <div class="links">
+  
+      <a href="mailto:nicorenald@gmail.com" target="_blank" title="Instagram">
+        <span class="text">Email</span>
+      </a>
+      <a href="https://www.linkedin.com/in/nicorenaldo/" target="_blank" title="Instagram">
+        <span class="text">Linkedin</span>
+      </a>
+      <a href="https://github.com/nicorenaldo/" target="_blank" title="Instagram">
+        <span class="text">Github</span>
+      </a>
+      <a href="https://www.kaggle.com/nicorenaldo" target="_blank" title="Kaggle">
+        <span class="text">Kaggle</span>
+      </a>
+      <a href="https://nicorenaldo.medium.com/" target="_blank" title="Medium">
+        <span class="text">Medium</span>
+      </a>
+    </div>
+    <!-- import the webpage's javascript file -->
+    <script src="/assets/scripts/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </footer>
+</html>
