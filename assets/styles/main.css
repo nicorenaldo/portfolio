@@ -50,7 +50,8 @@
 .job { margin-bottom: 2rem; }
 .job .company { font-weight: 500 !important; font-size: large; }
 .job .time { font-family: 'Inconsolata', monospace; }
-.job position { font-weight: 400; }
+.job .position { font-weight: 400; }
+.job .desc { padding: 0 0 0 1em; margin: 0; }
 
 .skills .category { margin-bottom: 1.5rem; font-size: large; }
 .skills .category .label { font-weight: 700; color: inherit !important; }
