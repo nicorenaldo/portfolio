@@ -239,8 +239,9 @@ strong{
 }
 
 .arrow-link {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
 }
+
 .arrow-link:after {
   font-weight: 700;
   white-space: nowrap;
@@ -376,7 +377,7 @@ strong{
 
 /* Nico Here */
 .intro {
-  padding: 6rem 24rem 6rem 6rem;
+  padding: 2rem 24rem 6rem 6rem;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
