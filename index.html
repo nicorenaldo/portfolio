@@ -10,7 +10,7 @@
     <meta property="og:title" content="Nico Renaldo">
     <meta property="og:description" name="description" content="Nico Renaldo Portfolio Website">
     <meta property="article:author" name="author" content="Nico Renaldo">
-    <meta property="og:url" content="http://nicorenaldo.com/" />
+    <meta property="og:url" content="http://localhost:4000/" />
     <meta property="og:image" content="/assets/img/logo/logo.jpg"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -63,7 +63,7 @@
     </h1>
   
     <h2 class="intro_text">I'm
-      <span class="name">Nico Renaldo</span>, a software<strong>/</strong>hardware engineer focused on building creative solutions through technology
+      <span class="name">Nico Renaldo</span>, a software engineer focused on building creative solutions through technology
     </h2>
   
     <h3 class="intro_text contact">
@@ -78,13 +78,19 @@
     <section id="about" class="section about">
     <div class="title">About Me</div>
     <div class="content">
-      <p>
+      <!-- <p>
         Hello! I'm Nico. I'm from Indonesia and I'm currently studying electrical engineering at 
         <a class="underline-link" href="https://ugm.ac.id/" target="_blank">Universitas Gadjah Mada</a>.
+      </p> -->
+      <p>
+        A determined final year student at <a class="underline-link" href="https://ugm.ac.id/" target="_blank">Gadjah Mada University</a> with focus on software and computer.
+      </p>
+      <p>
+        Contributed on multiple research project as project architect and software engineer, especially in microcontrollers and system backend topics.
       </p>
 
       <span class="highlight-link">
-        <a href="/assets/resume.pdf" target="_blank" style="font-size: 1.25rem">View My Resume (PDF)</a>
+        <a href="/assets/nicorenaldo_resume.pdf" target="_blank" style="font-size: 1.25rem">View My Resume (PDF)</a>
       </span>
   
     </div>
@@ -102,10 +108,12 @@
         <div class="job">
           <div class="time-place">
             <div>
-              <a class="company" href=>PT. Hamilton Prima Indonesia,</a>
+              
+              <a class="company">PT. Hamilton Prima Indonesia,</a>
+              
               <a>Backend Engineer,</a>
             </div>
-            <div class="time">2021 - Present</div>
+            <div class="time">Oct 2021 - Present</div>
           </div>
           
           <ul class="desc">
@@ -120,7 +128,29 @@
         <div class="job">
           <div class="time-place">
             <div>
+              
+              <a class="company" href=/project/jagawana/>Jagawana, Incubation Program by Google,</a>
+              
+              <a>Lead Backend Engineer,</a>
+            </div>
+            <div class="time">July - Dec 2021</div>
+          </div>
+          
+          <ul class="desc">
+            
+              <li>Co-managed a $10,000 research grant, ensured completion of all project deliverables</li>
+            
+              <li>Assembled an IoT model for distinguishing chainsaws sounds by utilizing AI on a cloud server</li>
+            
+          </ul>
+        </div>
+        
+        <div class="job">
+          <div class="time-place">
+            <div>
+              
               <a class="company" href=https://bangkit.academy/>Bangkit Academy by Google,</a>
+              
               <a>Machine Learning Trainee,</a>
             </div>
             <div class="time">Feb - June 2021</div>
@@ -130,7 +160,7 @@
             
               <li>Developed an illegal logging solution by integrating machine learning and IoT sensors and attained the top 15 final projects from the total of 483 teams</li>
             
-              <li>Performed data preparation, data preprocessing and created a CNN model which can detect chainsaw sounds from Mel Spectrogram feature</li>
+              <li>Performed data preparation, data preprocessing and created a CNN model which can detect chainsaw sounds from Mel Spectrogram data</li>
             
               <li>Graduated with distinction (top 10% performer) among 3000 participants from 250 universities in Indonesia</li>
             
@@ -140,7 +170,9 @@
         <div class="job">
           <div class="time-place">
             <div>
+              
               <a class="company" href=https://www.linkedin.com/company/widyaimersif/>Widya Imersif Teknologi,</a>
+              
               <a>Hardware Engineer Intern,</a>
             </div>
             <div class="time">Jan - Mar 2021</div>
@@ -158,7 +190,9 @@
         <div class="job">
           <div class="time-place">
             <div>
+              
               <a class="company" href=https://aerospace.ugm.ac.id/>Gadjah Mada Aerospace Team,</a>
+              
               <a>Electrical Engineer,</a>
             </div>
             <div class="time">Nov 2018 - June 2021</div>
@@ -219,132 +253,93 @@
   </section>
 
     
-    <section id="projects" class="section other-projects">
-        <div class="title">Projects</div>
-        <div class="content projects">
-          
-          
-          
-          <div class="project">
-            <!-- <img src="/assets/img/project/jagawana-illustration.png"> -->
-            <div class="project-info">
-              <div class="arrow-link">
-                <a class="name" href=/project/jagawana>Jagawana</a>
-                
-                <a><strong>, </strong>Bangkit Incubation Program by Google</a>
-                
-              </div>
-              <p>Research on chainsaw detection using IoT device and machine learning</p>
-              <div>                
-                
-                <span class="item">IoT</span>
-                
-                <span class="item">Tensorflow</span>
-                
-                <span class="item">GCP</span>
-                
-              </div>
-            </div>
-          </div>
-          
-          
-          
-          
-          
-          <div class="project">
-            <!-- <img src="/assets/img/project/itin-text.jpg"> -->
-            <div class="project-info">
-              <div class="arrow-link">
-                <a class="name" href=/project/itin>Itin</a>
-                
-                <a><strong>, </strong>Technoscape Hackathon 4.0</a>
-                
-              </div>
-              <p>A trip planning web application to easily make, share, and browse itineraries</p>
-              <div>                
-                
-                <span class="item">Django</span>
-                
-                <span class="item">Nuxt.js</span>
-                
-              </div>
-            </div>
-          </div>
-          
-          
-          
-          <div class="project">
-            <!-- <img src="/assets/img/project/ayolomba-about.jpg"> -->
-            <div class="project-info">
-              <div class="arrow-link">
-                <a class="name" href=/project/ayolomba>AyoLomba!</a>
-                
-                <a><strong>, </strong>Gemastik XIII Competition</a>
-                
-              </div>
-              <p>A centralized web platform to manage competition registration and advertising</p>
-              <div>                
-                
-                <span class="item">Django</span>
-                
-                <span class="item">HTML</span>
-                
-                <span class="item">SQL</span>
-                
-              </div>
-            </div>
-          </div>
-          
-          
-          
-          <div class="project">
-            <!-- <img src="/assets/img/project/sanyo-chart.png"> -->
-            <div class="project-info">
-              <div class="arrow-link">
-                <a class="name" href=/project/sanyo-inventory>Sanyo Inventory System</a>
-                
-                <a><strong>, </strong>Commisioned</a>
-                
-              </div>
-              <p>A commisioned project to provide inventory management and price listing for a local shop with Django</p>
-              <div>                
-                
-                <span class="item">Django</span>
-                
-                <span class="item">HTML</span>
-                
-                <span class="item">SQL</span>
-                
-              </div>
-            </div>
-          </div>
-          
-          
-          
-          <div class="project">
-            <!-- <img src="/assets/img/project/stock.png"> -->
-            <div class="project-info">
-              <div class="arrow-link">
-                <a class="name" href=/project/stock-tracker>Stock Tracker</a>
-                
-                <a><strong>, </strong>Personal Project</a>
-                
-              </div>
-              <p>An automated telegram bot to alert a price entry and breakout using algorithmic trading</p>
-              <div>                
-                
-                <span class="item">Python</span>
-                
-                <span class="item">Telegram</span>
-                
-              </div>
-            </div>
-          </div>
-          
-          
-  
-        </div>
-      </section>
+<section id="projects" class="section other-projects">
+	<div class="title">My Projects</div>
+	<div class="content projects cards">
+
+	
+		
+		<div class="project-card project">
+			<a href=/project/jagawana>
+				<img src="/assets/img/project/jagawana-illustration.png">
+			</a>
+			<div class="project-info">
+				<div class="arrow-link">
+					<a class="name" href=/project/jagawana>Jagawana</a>
+				</div>
+				<p>Research on chainsaw detection using IoT device and machine learning</p>
+				<div class="project-stack">                
+					
+					<span class="item">IoT</span>
+					
+					<span class="item">Tensorflow</span>
+					
+					<span class="item">GCP</span>
+					
+				</div>
+			</div>
+
+
+		</div>
+		
+	
+		
+	
+		
+		<div class="project-card project">
+			<a href=/project/itin>
+				<img src="/assets/img/project/itin-text.jpg">
+			</a>
+			<div class="project-info">
+				<div class="arrow-link">
+					<a class="name" href=/project/itin>Itin</a>
+				</div>
+				<p>A trip planning web application to easily make, share, and browse itineraries</p>
+				<div class="project-stack">                
+					
+					<span class="item">Django</span>
+					
+					<span class="item">Nuxt.js</span>
+					
+				</div>
+			</div>
+
+
+		</div>
+		
+	
+		
+		<div class="project-card project">
+			<a href=/project/ayolomba>
+				<img src="/assets/img/project/ayolomba-header.jpg">
+			</a>
+			<div class="project-info">
+				<div class="arrow-link">
+					<a class="name" href=/project/ayolomba>AyoLomba!</a>
+				</div>
+				<p>A centralized web platform to manage competition registration and advertising</p>
+				<div class="project-stack">                
+					
+					<span class="item">Django</span>
+					
+					<span class="item">HTML</span>
+					
+					<span class="item">SQL</span>
+					
+				</div>
+			</div>
+
+
+		</div>
+		
+	
+		
+	
+		
+	
+
+	</div>
+</section>
 
   </div>
   
@@ -352,12 +347,12 @@
 
 <footer class="footer">
     <div class="copyright">
-      <div class="top">
-        <span>Inspired from</span>
-      </div>
+      <!-- <div class="top">
+        <span>Template from</span>
+      </div> -->
       <div class="bottom">
         <a href="https://github.com/bchiang7/bchiang7.github.io">
-          <span style="color: #007bff !important;">here</span>
+          <span style="color: #007bff !important;">Template Source</span>
         </a>
       </div>
     </div>

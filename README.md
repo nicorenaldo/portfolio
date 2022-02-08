@@ -1,6 +1,11 @@
-# My Personal Portfolio
-Made in HTML, converted to Jekyll
-<br>Still on progress
+# Personal Portfolio
+Made with Jekyll
 
-Domain : [nicorenaldo.me](nicorenaldo.me)
-<br> From : [Namecheap.me](namecheap.me)
+## Run command
+```
+bundle exec jekyll serve
+
+bundle exec jekyll build
+```
+
+Domain : [nicorenaldo.com](nicorenaldo.com)
