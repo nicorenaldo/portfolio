@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-08T21:47:01+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Nico’s Portfolio</title><subtitle>Nico Renaldo Portfolio Website</subtitle><entry><title type="html">Itin</title><link href="http://localhost:4000/project/itin/" rel="alternate" type="text/html" title="Itin" /><published>2021-07-11T00:00:00+07:00</published><updated>2021-07-11T00:00:00+07:00</updated><id>http://localhost:4000/project/itin</id><content type="html" xml:base="http://localhost:4000/project/itin/">&lt;h2 id=&quot;project-brief&quot;&gt;Project Brief&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-01T22:13:16+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Nico Renaldo Portfolio Website</title><subtitle>Nico Renaldo Portfolio Website</subtitle><entry><title type="html">Itin</title><link href="http://localhost:4000/project/itin/" rel="alternate" type="text/html" title="Itin" /><published>2021-07-11T00:00:00+07:00</published><updated>2021-07-11T00:00:00+07:00</updated><id>http://localhost:4000/project/itin</id><content type="html" xml:base="http://localhost:4000/project/itin/">&lt;h2 id=&quot;project-brief&quot;&gt;Project Brief&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Itin&lt;/strong&gt; is a trip planning web application to easily make, share, and browse itineraries.  Users could make their own itinerary, share it with friends and public, and take inspiration from others.
 &lt;br /&gt;&lt;/p&gt;
 
@@ -13,7 +13,7 @@
 &lt;div class=&quot;carousel-container&quot;&gt;
       
     &lt;!-- Expanded image --&gt;
-    &lt;img id=&quot;expandedImg&quot; src=&quot;/assets/img/project/itin-create.jpg&quot; class=&quot;expanded-img&quot; /&gt;
+    &lt;img id=&quot;expandedImg&quot; src=&quot;/assets/img/project/itin-create.jpg&quot; class=&quot;expanded-img&quot; alt=&quot;nicorenaldo, Nico Renaldo&quot; /&gt;
   
     &lt;!-- Image text --&gt;
     &lt;div id=&quot;imgtext&quot;&gt;Creating Itinerary&lt;/div&gt;
@@ -68,7 +68,7 @@
 &lt;div class=&quot;carousel-container&quot;&gt;
       
     &lt;!-- Expanded image --&gt;
-    &lt;img id=&quot;expandedImg&quot; src=&quot;/assets/img/project/sanyo-chart.png&quot; class=&quot;expanded-img&quot; /&gt;
+    &lt;img id=&quot;expandedImg&quot; src=&quot;/assets/img/project/sanyo-chart.png&quot; class=&quot;expanded-img&quot; alt=&quot;nicorenaldo, Nico Renaldo&quot; /&gt;
   
     &lt;!-- Image text --&gt;
     &lt;div id=&quot;imgtext&quot;&gt;Chart of Profit and Stocks&lt;/div&gt;
@@ -126,7 +126,7 @@ This project combines &lt;strong&gt;machine learning, internet of things, cloud 
 &lt;div class=&quot;carousel-container&quot;&gt;
       
     &lt;!-- Expanded image --&gt;
-    &lt;img id=&quot;expandedImg&quot; src=&quot;/assets/img/project/jagawana-illustration.png&quot; class=&quot;expanded-img&quot; /&gt;
+    &lt;img id=&quot;expandedImg&quot; src=&quot;/assets/img/project/jagawana-illustration.png&quot; class=&quot;expanded-img&quot; alt=&quot;nicorenaldo, Nico Renaldo&quot; /&gt;
   
     &lt;!-- Image text --&gt;
     &lt;div id=&quot;imgtext&quot;&gt;Illustration&lt;/div&gt;
@@ -191,7 +191,7 @@ This project combines &lt;strong&gt;machine learning, internet of things, cloud 
 &lt;div class=&quot;carousel-container&quot;&gt;
       
     &lt;!-- Expanded image --&gt;
-    &lt;img id=&quot;expandedImg&quot; src=&quot;/assets/img/project/ayolomba-form.jpg&quot; class=&quot;expanded-img&quot; /&gt;
+    &lt;img id=&quot;expandedImg&quot; src=&quot;/assets/img/project/ayolomba-form.jpg&quot; class=&quot;expanded-img&quot; alt=&quot;nicorenaldo, Nico Renaldo&quot; /&gt;
   
     &lt;!-- Image text --&gt;
     &lt;div id=&quot;imgtext&quot;&gt;Posting Form&lt;/div&gt;
