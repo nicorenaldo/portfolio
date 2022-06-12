@@ -238,10 +238,6 @@ strong{
   margin-bottom: 3rem;
 }
 
-.arrow-link {
-  /* font-size: 1.25rem; */
-}
-
 .arrow-link:after {
   font-weight: 700;
   white-space: nowrap;

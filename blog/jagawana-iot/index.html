@@ -2,47 +2,60 @@
 <html>
     <head>
         <title>Jagawana — Internet of Things</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta property="og:site_name" content="Nico Renaldo Portfolio Website">
-        <meta property="og:title" content="Jagawana — Internet of Things">
-        <meta property="og:description" content="How to record sounds on device and sending it to cloud.">
-        <meta itemprop="keywords" content="Bangkit,Jagawana,Esp32 Audio,Record Audio,Mqtt Audio,record audio,send audio mqtt,esp32 audio,microphone arduino,jagawana,bangkit 2021" />
-        
-            <meta property="article:tag" content="Bangkit">
-        
-            <meta property="article:tag" content="Jagawana">
-        
-            <meta property="article:tag" content="Esp32 Audio">
-        
-            <meta property="article:tag" content="Record Audio">
-        
-            <meta property="article:tag" content="Mqtt Audio">
-        
-            <meta property="article:tag" content="record audio">
-        
-            <meta property="article:tag" content="send audio mqtt">
-        
-            <meta property="article:tag" content="esp32 audio">
-        
-            <meta property="article:tag" content="microphone arduino">
-        
-            <meta property="article:tag" content="jagawana">
-        
-            <meta property="article:tag" content="bangkit 2021">
-        
-        <meta property="article:author" content="Nico Renaldo">
-        <meta property="og:url" content="http://localhost:4000/blog/jagawana-iot/" />
-        <meta property="og:image" content="/assets/img/logo/logo.jpg"/>
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="shortcut icon" href="/assets/img/logo/favicon.ico" type="image/x-icon">
-        <!-- import the webpage's stylesheet -->
-        <link rel="stylesheet" href="/assets/styles/style.css">
-        <link rel="stylesheet" href="/assets/styles/main.css">
-        <link rel="stylesheet preload" as="style" type="text/css" href="/assets/styles/fonts.css" crossorigin="anonymous">
+<meta property="og:site_name" content="Nico Renaldo Blog">
+<meta property="og:title" content="Jagawana — Internet of Things">
+<meta name="title" content="Jagawana — Internet of Things">
+<meta data-rh="true" property="article:published_time" content="2021-06-05T00:00:00+07:00">
+
+<meta name="description" content="How to record sounds on device and sending it to cloud.">
+<meta property="og:description" content="How to record sounds on device and sending it to cloud.">
+
+<meta itemprop="keywords" content="Bangkit,Jagawana,Esp32 Audio,Record Audio,Mqtt Audio,record audio,send audio mqtt,esp32 audio,microphone arduino,jagawana,bangkit 2021" />
+
+<meta property="article:tag" content="Bangkit">
+
+<meta property="article:tag" content="Jagawana">
+
+<meta property="article:tag" content="Esp32 Audio">
+
+<meta property="article:tag" content="Record Audio">
+
+<meta property="article:tag" content="Mqtt Audio">
+
+<meta property="article:tag" content="record audio">
+
+<meta property="article:tag" content="send audio mqtt">
+
+<meta property="article:tag" content="esp32 audio">
+
+<meta property="article:tag" content="microphone arduino">
+
+<meta property="article:tag" content="jagawana">
+
+<meta property="article:tag" content="bangkit 2021">
+
+
+<meta property="article:author" content="https://nicorenaldo.com">
+<link data-rh="true" rel="author" href="http://nicorenaldo.com">
+<meta property="author" content="Nico Renaldo">
+<meta name="author" content="Nico Renaldo">
+
+<!-- Reference from Medium -->
+<meta property="og:url" content="http://nicorenaldo.com/blog/jagawana-iot/" />
+<meta property="og:image" content="http://nicorenaldo.com/assets/img/logo/logo.jpg" />
+<meta data-rh="true" property="article:author" content="http://nicorenaldo.com">
+<link data-rh="true" rel="icon" href="http://nicorenaldo.com/assets/img/logo/logo.jpg">
+<meta data-rh="true" name="robots" content="index,follow,max-image-preview:large">
+<meta data-rh="true" name="twitter:label1" content="Reading time">
+<meta data-rh="true" name="twitter:data1" content="6 min read">
+<link data-rh="true" rel="search" type="application/opensearchdescription+xml" title="Nico Renaldo" href="/sitemap.xml">
+<link data-rh="true" rel="canonical" href="http://nicorenaldo.com/blog/jagawana-iot/">
+<link data-rh="true" rel="alternate" href="nicorenaldo.com">
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G3EL905KFD"></script>
 <script>
@@ -52,6 +65,13 @@
 
   gtag('config', 'G-G3EL905KFD');
 </script>
+        <script src="https://kit.fontawesome.com/f231ca2b0e.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="/assets/img/logo/favicon.ico" type="image/x-icon">
+        <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="/assets/styles/style.css">
+        <link rel="stylesheet" href="/assets/styles/main.css">
+        <link rel="stylesheet preload" as="style" type="text/css" href="/assets/styles/fonts.css"
+            crossorigin="anonymous">
     </head>
     <body id="body">
         
@@ -89,7 +109,7 @@
                     <p><img src="/assets/img/project/featured-jagawana.jpg" alt="Soundwave" class="img-responsive" /></p>
 
 <p class="quote">
-    Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time. We deployed a Machine Learning Model to process the sounds taken by the sensor, then the model will identify the sounds into various categories, such as chainsaws, trucks, gunshot, and burning sounds. We will be using Android App to monitor and notify the user if suspicious events were happening in the forest, the user could also be able to hear the sound itself to ensure the results are correct. <a href="http://localhost:4000/blog/jagawana-overview/">Link to the project overview</a>.
+    Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time. We deployed a Machine Learning Model to process the sounds taken by the sensor, then the model will identify the sounds into various categories, such as chainsaws, trucks, gunshot, and burning sounds. We will be using Android App to monitor and notify the user if suspicious events were happening in the forest, the user could also be able to hear the sound itself to ensure the results are correct. <a href="http://nicorenaldo.com/blog/jagawana-overview/">Link to the project overview</a>.
 </p>
 
 <p>One of the keys to our project is how we will gather audio from the forest, our solution involves creating a Wide Sensor Network that spans across the forest. This idea is popularly used by many researchers, especially in detecting forest fires using a smoke detector.</p>

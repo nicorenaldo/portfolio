@@ -1,3 +1,13 @@
+.test { display: block; }
+
+@media (min-width: 769px) { .dropdown-toggle { display: none; }
+  .dropdown-menu { margin: 0 0 0 4rem; }
+  .dropdown-menu a { margin: 0 1rem 0 0; }
+  .project-post { flex-direction: column; display: flex; justify-content: center; padding: 4rem 20rem; }
+  .project-post .content { font-size: 1.25rem; font-weight: 300; }
+  .content-header { display: flex; justify-content: space-between; }
+  .section { display: flex; justify-content: center; padding: 4rem 12rem; }
+  .section .title { text-align: right; } }
 @media screen and (max-width: 767px) { .dropdown-menu { display: none; position: absolute; }
   .dropdown-menu.toggle { display: grid; }
   .dropdown { text-align: left; }
@@ -7,7 +17,6 @@
   .section .title { text-align: left; }
   .title { text-align: left; padding-bottom: 1.5rem; }
   .skillz { display: block; }
-  .time-place { display: block; }
   .cate-container { padding-bottom: 1.5rem; }
   .featured-projects .project { display: block; }
   .featured-projects .project .caption { padding-top: 1rem; margin: 0; }
@@ -16,14 +25,6 @@
   .links { display: block; }
   .project-post { display: block; padding: 0 2rem; flex-direction: column; }
   .project-post .content { font-size: 1rem; font-weight: 300; } }
-@media (min-width: 769px) { .dropdown-toggle { display: none; }
-  .dropdown-menu { margin: 0 0 0 4rem; }
-  .dropdown-menu a { margin: 0 1rem 0 0; }
-  .project-post { flex-direction: column; display: flex; justify-content: center; padding: 4rem 20rem; }
-  .project-post .content { font-size: 1.25rem; font-weight: 300; }
-  .time-place { display: flex; justify-content: space-between; }
-  .section { display: flex; justify-content: center; padding: 4rem 12rem; }
-  .section .title { text-align: right; } }
 .other-projects { display: block; padding: 4rem 10rem; }
 .other-projects .title { text-align: center; margin-bottom: 3rem; font-size: x-large !important; }
 
@@ -57,11 +58,11 @@
 
 .navbar.toggle { padding: 1rem 2rem 8rem 2rem; }
 
-.job { margin-bottom: 2rem; }
-.job .company { font-weight: 500 !important; font-size: large; }
-.job .time { font-family: 'Inconsolata', monospace; }
-.job .position { font-weight: 400; }
-.job .desc { padding: 0 0 0 1em; margin: 0; }
+.content-item { margin-bottom: 2rem; }
+.content-title { font-weight: 500 !important; font-size: large; }
+.content-subtitle-mono { font-family: 'Inconsolata', monospace; }
+.content-subtitle { font-weight: 400; }
+.content-text { padding: 0 0 0 1em; margin: 0; }
 
 .skills .category { margin-bottom: 1.5rem; font-size: large; }
 .skills .category .label { font-weight: 700; color: inherit !important; }
