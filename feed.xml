@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://nicorenaldo.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://nicorenaldo.com/" rel="alternate" type="text/html" /><updated>2022-06-13T02:47:21+07:00</updated><id>http://nicorenaldo.com/feed.xml</id><title type="html">Nico Renaldo Portfolio Website</title><subtitle>Nico Renaldo Portfolio Website</subtitle><entry><title type="html">Itin</title><link href="http://nicorenaldo.com/project/itin/" rel="alternate" type="text/html" title="Itin" /><published>2021-07-11T00:00:00+07:00</published><updated>2021-07-11T00:00:00+07:00</updated><id>http://nicorenaldo.com/project/itin</id><content type="html" xml:base="http://nicorenaldo.com/project/itin/">&lt;h2 id=&quot;project-brief&quot;&gt;Project Brief&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://nicorenaldo.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://nicorenaldo.com/" rel="alternate" type="text/html" /><updated>2022-06-13T18:31:33+07:00</updated><id>http://nicorenaldo.com/feed.xml</id><title type="html">Nico Renaldo Portfolio Website</title><subtitle>Nico Renaldo Portfolio Website</subtitle><entry><title type="html">Itin</title><link href="http://nicorenaldo.com/project/itin/" rel="alternate" type="text/html" title="Itin" /><published>2021-07-11T00:00:00+07:00</published><updated>2021-07-11T00:00:00+07:00</updated><id>http://nicorenaldo.com/project/itin</id><content type="html" xml:base="http://nicorenaldo.com/project/itin/">&lt;h2 id=&quot;project-brief&quot;&gt;Project Brief&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Itin&lt;/strong&gt; is a trip planning web application to easily make, share, and browse itineraries.  Users could make their own itinerary, share it with friends and public, and take inspiration from others.
 &lt;br /&gt;&lt;/p&gt;
 
@@ -55,7 +55,59 @@
 &lt;h2 id=&quot;introduction-video&quot;&gt;Introduction Video&lt;/h2&gt;
 &lt;div class=&quot;ytb-embed-container&quot;&gt;
 &lt;iframe height=&quot;480px&quot; width=&quot;854px&quot; class=&quot;ytb-embed&quot; src=&quot;https://www.youtube.com/embed/QpfyA9de6zk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="hardware" /><summary type="html">Project Brief Itin is a trip planning web application to easily make, share, and browse itineraries. Users could make their own itinerary, share it with friends and public, and take inspiration from others.</summary></entry><entry><title type="html">Stock Tracker</title><link href="http://nicorenaldo.com/project/stock-tracker/" rel="alternate" type="text/html" title="Stock Tracker" /><published>2021-06-11T00:00:00+07:00</published><updated>2021-06-11T00:00:00+07:00</updated><id>http://nicorenaldo.com/project/stock-tracker</id><content type="html" xml:base="http://nicorenaldo.com/project/stock-tracker/">&lt;h1 id=&quot;to-be-added&quot;&gt;to be added&lt;/h1&gt;</content><author><name></name></author><category term="hardware" /><summary type="html">to be added</summary></entry><entry><title type="html">Sanyo Inventory System</title><link href="http://nicorenaldo.com/project/sanyo-inventory/" rel="alternate" type="text/html" title="Sanyo Inventory System" /><published>2021-06-11T00:00:00+07:00</published><updated>2021-06-11T00:00:00+07:00</updated><id>http://nicorenaldo.com/project/sanyo-inventory</id><content type="html" xml:base="http://nicorenaldo.com/project/sanyo-inventory/">&lt;h2 id=&quot;project-brief&quot;&gt;Project Brief&lt;/h2&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="hardware" /><summary type="html">Project Brief Itin is a trip planning web application to easily make, share, and browse itineraries. Users could make their own itinerary, share it with friends and public, and take inspiration from others.</summary></entry><entry><title type="html">AyoLomba!</title><link href="http://nicorenaldo.com/project/ayolomba/" rel="alternate" type="text/html" title="AyoLomba!" /><published>2021-06-11T00:00:00+07:00</published><updated>2021-06-11T00:00:00+07:00</updated><id>http://nicorenaldo.com/project/ayolomba</id><content type="html" xml:base="http://nicorenaldo.com/project/ayolomba/">&lt;h2 id=&quot;project-brief&quot;&gt;Project Brief&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;AyoLomba!&lt;/strong&gt; is a web platform to accomodate event organizers and students across Indonesia to post and search competitions, scholarships, and webinars with better experience. Members can find the event they want based on their preferences, AyoLomba! also helps out organizers to reach their audience, using sleek UI and many features to help out both parties.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Link to &lt;a href=&quot;https://ayolomba-id.herokuapp.com/&quot;&gt;project demo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;AyoLomba!&lt;/strong&gt; is created using &lt;strong&gt;Django&lt;/strong&gt; and hosted on &lt;strong&gt;Heroku&lt;/strong&gt;. While there are many option to find information about events, most of them rely on social media like Instagram and Line that doesn’t have any filtering feature. This is why we are motivated to create a dedicated platform using web and android app, that solve this irritable issue. This project is made prior to the emerging giant &lt;strong&gt;Sejuta Cita&lt;/strong&gt; which holds the same concept with us.&lt;/p&gt;
+
+&lt;h2 id=&quot;photos&quot;&gt;Photos&lt;/h2&gt;
+
+&lt;div class=&quot;carousel-container&quot;&gt;
+      
+    &lt;!-- Expanded image --&gt;
+    &lt;img id=&quot;expandedImg&quot; src=&quot;/assets/img/project/ayolomba-form.jpg&quot; class=&quot;expanded-img&quot; alt=&quot;nicorenaldo, Nico Renaldo&quot; /&gt;
+  
+    &lt;!-- Image text --&gt;
+    &lt;div id=&quot;imgtext&quot;&gt;Posting Form&lt;/div&gt;
+      &lt;!-- Left and right controls --&gt;
+  &lt;!--   
+    &lt;a class=&quot;prev-button&quot; href=&quot;#demo&quot; data-slide=&quot;prev&quot; onclick=&quot;plusSlides(-1)&quot;&gt;&lt;&lt;/a&gt;
+    &lt;a class=&quot;next-button&quot; href=&quot;#demo&quot; data-slide=&quot;next&quot; onclick=&quot;plusSlides(1)&quot;&gt;&gt;&lt;/a&gt; --&gt;
+      &lt;!-- &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#demo&quot; data-slide=&quot;prev&quot;&gt;
+      &lt;span class=&quot;carousel-control-prev-icon&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;carousel-control-next&quot; href=&quot;#demo&quot; data-slide=&quot;next&quot;&gt;
+      &lt;span class=&quot;carousel-control-next-icon&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt; --&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;!-- The grid: four columns --&gt;&lt;/p&gt;
+&lt;div class=&quot;carousel&quot;&gt;
+      &lt;div class=&quot;items&quot;&gt;
+          
+          &lt;div class=&quot;item&quot;&gt;
+              &lt;img src=&quot;/assets/img/project/ayolomba-form.jpg&quot; alt=&quot;Posting Form&quot; class=&quot;item-img&quot; onclick=&quot;carouselchoose(this);&quot; /&gt;
+          &lt;/div&gt;
+          
+          &lt;div class=&quot;item&quot;&gt;
+              &lt;img src=&quot;/assets/img/project/ayolomba-search2.jpg&quot; alt=&quot;Browse Page&quot; class=&quot;item-img&quot; onclick=&quot;carouselchoose(this);&quot; /&gt;
+          &lt;/div&gt;
+          
+          &lt;div class=&quot;item&quot;&gt;
+              &lt;img src=&quot;/assets/img/project/ayolomba-lomba.jpg&quot; alt=&quot;Event Details&quot; class=&quot;item-img&quot; onclick=&quot;carouselchoose(this);&quot; /&gt;
+          &lt;/div&gt;
+          
+          &lt;div class=&quot;item&quot;&gt;
+              &lt;img src=&quot;/assets/img/project/ayolomba-about.jpg&quot; alt=&quot;About Us&quot; class=&quot;item-img&quot; onclick=&quot;carouselchoose(this);&quot; /&gt;
+          &lt;/div&gt;
+          
+      &lt;/div&gt;
+  &lt;/div&gt;</content><author><name></name></author><category term="hardware" /><summary type="html">Project Brief AyoLomba! is a web platform to accomodate event organizers and students across Indonesia to post and search competitions, scholarships, and webinars with better experience. Members can find the event they want based on their preferences, AyoLomba! also helps out organizers to reach their audience, using sleek UI and many features to help out both parties.</summary></entry><entry><title type="html">Stock Tracker</title><link href="http://nicorenaldo.com/project/stock-tracker/" rel="alternate" type="text/html" title="Stock Tracker" /><published>2021-06-11T00:00:00+07:00</published><updated>2021-06-11T00:00:00+07:00</updated><id>http://nicorenaldo.com/project/stock-tracker</id><content type="html" xml:base="http://nicorenaldo.com/project/stock-tracker/">&lt;h1 id=&quot;to-be-added&quot;&gt;to be added&lt;/h1&gt;</content><author><name></name></author><category term="hardware" /><summary type="html">to be added</summary></entry><entry><title type="html">Sanyo Inventory System</title><link href="http://nicorenaldo.com/project/sanyo-inventory/" rel="alternate" type="text/html" title="Sanyo Inventory System" /><published>2021-06-11T00:00:00+07:00</published><updated>2021-06-11T00:00:00+07:00</updated><id>http://nicorenaldo.com/project/sanyo-inventory</id><content type="html" xml:base="http://nicorenaldo.com/project/sanyo-inventory/">&lt;h2 id=&quot;project-brief&quot;&gt;Project Brief&lt;/h2&gt;
 &lt;p&gt;This project is an inventory management system I created on my holiday. The website is used to track products stock and to track sales and profits. The website is created using using &lt;strong&gt;Django&lt;/strong&gt; and hosted on &lt;strong&gt;Heroku&lt;/strong&gt;. This project teaches me the CRUD basic on Django.
 &lt;br /&gt;&lt;/p&gt;
 
@@ -176,59 +228,7 @@ This project combines &lt;strong&gt;machine learning, internet of things, cloud 
   &lt;li&gt;&lt;a href=&quot;https://nicorenaldo.medium.com/detecting-chainsaws-in-forest-with-machine-learning-jagawana-989fd345784&quot;&gt;About Jagawana&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://nicorenaldo.medium.com/jagawana-machine-learning-in-depth-6ea66a45d6b2&quot;&gt;ML in Depth&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://nicorenaldo.medium.com/jagawana-internet-of-things-511d63e48349&quot;&gt;IoT in Depth&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="hardware" /><summary type="html">Project Brief Jagawana is a wide sensor network system deployed in the forests to prevent ilegal logging. We use sensors to pick up voices in the forests to monitor what happened in the forest in real-time. We use machine learning to process the sounds taken by the sensor and to identify the sounds into various categories, such as chainsaws, trucks, gunshot, and burning sounds. We will be using Android App to monitor and notify the user if suspicious events were happening in the forest.</summary></entry><entry><title type="html">AyoLomba!</title><link href="http://nicorenaldo.com/project/ayolomba/" rel="alternate" type="text/html" title="AyoLomba!" /><published>2021-06-11T00:00:00+07:00</published><updated>2021-06-11T00:00:00+07:00</updated><id>http://nicorenaldo.com/project/ayolomba</id><content type="html" xml:base="http://nicorenaldo.com/project/ayolomba/">&lt;h2 id=&quot;project-brief&quot;&gt;Project Brief&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;AyoLomba!&lt;/strong&gt; is a web platform to accomodate event organizers and students across Indonesia to post and search competitions, scholarships, and webinars with better experience. Members can find the event they want based on their preferences, AyoLomba! also helps out organizers to reach their audience, using sleek UI and many features to help out both parties.
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Link to &lt;a href=&quot;https://ayolomba-id.herokuapp.com/&quot;&gt;project demo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;AyoLomba!&lt;/strong&gt; is created using &lt;strong&gt;Django&lt;/strong&gt; and hosted on &lt;strong&gt;Heroku&lt;/strong&gt;. While there are many option to find information about events, most of them rely on social media like Instagram and Line that doesn’t have any filtering feature. This is why we are motivated to create a dedicated platform using web and android app, that solve this irritable issue. This project is made prior to the emerging giant &lt;strong&gt;Sejuta Cita&lt;/strong&gt; which holds the same concept with us.&lt;/p&gt;
-
-&lt;h2 id=&quot;photos&quot;&gt;Photos&lt;/h2&gt;
-
-&lt;div class=&quot;carousel-container&quot;&gt;
-      
-    &lt;!-- Expanded image --&gt;
-    &lt;img id=&quot;expandedImg&quot; src=&quot;/assets/img/project/ayolomba-form.jpg&quot; class=&quot;expanded-img&quot; alt=&quot;nicorenaldo, Nico Renaldo&quot; /&gt;
-  
-    &lt;!-- Image text --&gt;
-    &lt;div id=&quot;imgtext&quot;&gt;Posting Form&lt;/div&gt;
-      &lt;!-- Left and right controls --&gt;
-  &lt;!--   
-    &lt;a class=&quot;prev-button&quot; href=&quot;#demo&quot; data-slide=&quot;prev&quot; onclick=&quot;plusSlides(-1)&quot;&gt;&lt;&lt;/a&gt;
-    &lt;a class=&quot;next-button&quot; href=&quot;#demo&quot; data-slide=&quot;next&quot; onclick=&quot;plusSlides(1)&quot;&gt;&gt;&lt;/a&gt; --&gt;
-      &lt;!-- &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#demo&quot; data-slide=&quot;prev&quot;&gt;
-      &lt;span class=&quot;carousel-control-prev-icon&quot;&gt;&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;a class=&quot;carousel-control-next&quot; href=&quot;#demo&quot; data-slide=&quot;next&quot;&gt;
-      &lt;span class=&quot;carousel-control-next-icon&quot;&gt;&lt;/span&gt;
-    &lt;/a&gt; --&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;!-- The grid: four columns --&gt;&lt;/p&gt;
-&lt;div class=&quot;carousel&quot;&gt;
-      &lt;div class=&quot;items&quot;&gt;
-          
-          &lt;div class=&quot;item&quot;&gt;
-              &lt;img src=&quot;/assets/img/project/ayolomba-form.jpg&quot; alt=&quot;Posting Form&quot; class=&quot;item-img&quot; onclick=&quot;carouselchoose(this);&quot; /&gt;
-          &lt;/div&gt;
-          
-          &lt;div class=&quot;item&quot;&gt;
-              &lt;img src=&quot;/assets/img/project/ayolomba-search2.jpg&quot; alt=&quot;Browse Page&quot; class=&quot;item-img&quot; onclick=&quot;carouselchoose(this);&quot; /&gt;
-          &lt;/div&gt;
-          
-          &lt;div class=&quot;item&quot;&gt;
-              &lt;img src=&quot;/assets/img/project/ayolomba-lomba.jpg&quot; alt=&quot;Event Details&quot; class=&quot;item-img&quot; onclick=&quot;carouselchoose(this);&quot; /&gt;
-          &lt;/div&gt;
-          
-          &lt;div class=&quot;item&quot;&gt;
-              &lt;img src=&quot;/assets/img/project/ayolomba-about.jpg&quot; alt=&quot;About Us&quot; class=&quot;item-img&quot; onclick=&quot;carouselchoose(this);&quot; /&gt;
-          &lt;/div&gt;
-          
-      &lt;/div&gt;
-  &lt;/div&gt;</content><author><name></name></author><category term="hardware" /><summary type="html">Project Brief AyoLomba! is a web platform to accomodate event organizers and students across Indonesia to post and search competitions, scholarships, and webinars with better experience. Members can find the event they want based on their preferences, AyoLomba! also helps out organizers to reach their audience, using sleek UI and many features to help out both parties.</summary></entry><entry><title type="html">Jagawana — Machine Learning In Depth</title><link href="http://nicorenaldo.com/blog/jagawana-machine-learning/" rel="alternate" type="text/html" title="Jagawana — Machine Learning In Depth" /><published>2021-06-10T00:00:00+07:00</published><updated>2021-06-10T00:00:00+07:00</updated><id>http://nicorenaldo.com/blog/jagawana-machine-learning</id><content type="html" xml:base="http://nicorenaldo.com/blog/jagawana-machine-learning/">&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/soundwave.png&quot; alt=&quot;Soundwave&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="hardware" /><summary type="html">Project Brief Jagawana is a wide sensor network system deployed in the forests to prevent ilegal logging. We use sensors to pick up voices in the forests to monitor what happened in the forest in real-time. We use machine learning to process the sounds taken by the sensor and to identify the sounds into various categories, such as chainsaws, trucks, gunshot, and burning sounds. We will be using Android App to monitor and notify the user if suspicious events were happening in the forest.</summary></entry><entry><title type="html">Jagawana — Machine Learning In Depth</title><link href="http://nicorenaldo.com/blog/jagawana-machine-learning/" rel="alternate" type="text/html" title="Jagawana — Machine Learning In Depth" /><published>2021-06-10T00:00:00+07:00</published><updated>2021-06-10T00:00:00+07:00</updated><id>http://nicorenaldo.com/blog/jagawana-machine-learning</id><content type="html" xml:base="http://nicorenaldo.com/blog/jagawana-machine-learning/">&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/soundwave.png&quot; alt=&quot;Soundwave&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
 &lt;p class=&quot;quote&quot;&gt;
     Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time. We deployed a Machine Learning Model to process the sounds taken by the sensor, then the model will identify the sounds into various categories, such as chainsaws, trucks, gunshot, and burning sounds. We will be using Android App to monitor and notify the user if suspicious events were happening in the forest, the user could also be able to hear the sound itself to ensure the results are correct. &lt;a href=&quot;http://nicorenaldo.com/blog/jagawana-overview/&quot;&gt;Link to the project overview&lt;/a&gt;.
@@ -330,7 +330,7 @@ This project combines &lt;strong&gt;machine learning, internet of things, cloud 
 &lt;em&gt;Before and After Highlighting the Sounds&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;There are still many aspects that could be improved, especially researching different model architecture, using a better dataset, and using a different audio feature like MFCC. Feel free to ask questions and using my Kaggle notebook as a reference, I hope my work on this project could help someone else in researching this topic.&lt;/p&gt;</content><author><name></name></author><category term="hardware" /><category term="Bangkit" /><category term="Jagawana" /><category term="Audio Classification" /><category term="Chainsaws" /><category term="Illegal Logging" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://nicorenaldo.com/soundwave.png" /><media:content medium="image" url="http://nicorenaldo.com/soundwave.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Jagawana — Internet of Things</title><link href="http://nicorenaldo.com/blog/jagawana-iot/" rel="alternate" type="text/html" title="Jagawana — Internet of Things" /><published>2021-06-05T00:00:00+07:00</published><updated>2021-06-05T00:00:00+07:00</updated><id>http://nicorenaldo.com/blog/jagawana-iot</id><content type="html" xml:base="http://nicorenaldo.com/blog/jagawana-iot/">&lt;p&gt;&lt;img src=&quot;/assets/img/project/featured-jagawana.jpg&quot; alt=&quot;Soundwave&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;There are still many aspects that could be improved, especially researching different model architecture, using a better dataset, and using a different audio feature like MFCC. Feel free to ask questions and using my Kaggle notebook as a reference, I hope my work on this project could help someone else in researching this topic.&lt;/p&gt;</content><author><name></name></author><category term="hardware" /><category term="Bangkit" /><category term="Jagawana" /><category term="Audio Classification" /><category term="Chainsaws" /><category term="Illegal Logging" /><summary type="html"></summary></entry><entry><title type="html">Jagawana — Internet of Things in Depth</title><link href="http://nicorenaldo.com/blog/jagawana-iot/" rel="alternate" type="text/html" title="Jagawana — Internet of Things in Depth" /><published>2021-06-05T00:00:00+07:00</published><updated>2021-06-05T00:00:00+07:00</updated><id>http://nicorenaldo.com/blog/jagawana-iot</id><content type="html" xml:base="http://nicorenaldo.com/blog/jagawana-iot/">&lt;p&gt;&lt;img src=&quot;/assets/img/project/featured-jagawana.jpg&quot; alt=&quot;Soundwave&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
 &lt;p class=&quot;quote&quot;&gt;
     Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time. We deployed a Machine Learning Model to process the sounds taken by the sensor, then the model will identify the sounds into various categories, such as chainsaws, trucks, gunshot, and burning sounds. We will be using Android App to monitor and notify the user if suspicious events were happening in the forest, the user could also be able to hear the sound itself to ensure the results are correct. &lt;a href=&quot;http://nicorenaldo.com/blog/jagawana-overview/&quot;&gt;Link to the project overview&lt;/a&gt;.
@@ -432,7 +432,7 @@ This project combines &lt;strong&gt;machine learning, internet of things, cloud 
 &lt;/div&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/nicorenaldo/jagawana-iot&quot;&gt;My Code on Github&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://github.com/MhageGH/esp32_SoundRecorder/&quot;&gt;C++ Analog Microphone Library&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="hardware" /><category term="Bangkit" /><category term="Jagawana" /><category term="Esp32 Audio" /><category term="Record Audio" /><category term="Mqtt Audio" /><category term="record audio" /><category term="send audio mqtt" /><category term="esp32 audio" /><category term="microphone arduino" /><category term="jagawana" /><category term="bangkit 2021" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://nicorenaldo.com/project/featured-jagawana.jpg" /><media:content medium="image" url="http://nicorenaldo.com/project/featured-jagawana.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Detecting Chainsaws in Forest with Machine Learning — Jagawana</title><link href="http://nicorenaldo.com/blog/jagawana-overview/" rel="alternate" type="text/html" title="Detecting Chainsaws in Forest with Machine Learning — Jagawana" /><published>2021-05-16T00:00:00+07:00</published><updated>2021-05-16T00:00:00+07:00</updated><id>http://nicorenaldo.com/blog/jagawana-overview</id><content type="html" xml:base="http://nicorenaldo.com/blog/jagawana-overview/">&lt;p&gt;In the last post, I talked about my experience at Bangkit Academy 2021 as a Machine Learning Path Participant. After completing the assigned course, we were given a task to do a capstone project by solving a real-life project using our knowledge on Machine Learning, Android Development, and Cloud Computing.&lt;/p&gt;
+&lt;a href=&quot;https://github.com/MhageGH/esp32_SoundRecorder/&quot;&gt;C++ Analog Microphone Library&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="hardware" /><category term="Bangkit" /><category term="Jagawana" /><category term="Esp32 Audio" /><category term="Record Audio" /><category term="Mqtt Audio" /><category term="record audio" /><category term="send audio mqtt" /><category term="esp32 audio" /><category term="microphone arduino" /><category term="jagawana" /><category term="bangkit 2021" /><summary type="html"></summary></entry><entry><title type="html">Detecting Chainsaws in Forest with Machine Learning — Jagawana</title><link href="http://nicorenaldo.com/blog/jagawana-overview/" rel="alternate" type="text/html" title="Detecting Chainsaws in Forest with Machine Learning — Jagawana" /><published>2021-05-16T00:00:00+07:00</published><updated>2021-05-16T00:00:00+07:00</updated><id>http://nicorenaldo.com/blog/jagawana-overview</id><content type="html" xml:base="http://nicorenaldo.com/blog/jagawana-overview/">&lt;p&gt;In the last post, I talked about my experience at Bangkit Academy 2021 as a Machine Learning Path Participant. After completing the assigned course, we were given a task to do a capstone project by solving a real-life project using our knowledge on Machine Learning, Android Development, and Cloud Computing.&lt;/p&gt;
 
 &lt;p&gt;After forming our group (2 members from each learning path), we start brainstorming our ideas, looking over various themes and different problems, and eventually, we decided to tackle the problem of illegal logging through Indonesia’s forest. While it may not have huge business potential like Bangkit intended, we still think this idea is unique and interesting to tackle and could be implemented in this very nation.&lt;/p&gt;
 
@@ -525,4 +525,174 @@ The service we are using for the sensor networks are IoT Core for registering de
 &lt;p&gt;&lt;a href=&quot;https://github.com/nicorenaldo/jagawana-iot&quot;&gt;Internet of Things&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://github.com/nicorenaldo/jagawana-ml&quot;&gt;Machine Learning&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://github.com/jeffrywu28/jagawana-cloud&quot;&gt;Cloud Computing&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://github.com/Bobby-Anggunawan/Jagawana-AndroidApp&quot;&gt;Android App&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="hardware" /><category term="classify audio" /><category term="predict audio" /><category term="ML audio" /><category term="detect voice" /><category term="forest fire" /><category term="capstone project" /><category term="bangkit capstone" /><category term="forest protect" /><category term="jagawana" /><summary type="html">In the last post, I talked about my experience at Bangkit Academy 2021 as a Machine Learning Path Participant. After completing the assigned course, we were given a task to do a capstone project by solving a real-life project using our knowledge on Machine Learning, Android Development, and Cloud Computing.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://nicorenaldo.com/project/jagawana-illustration.png" /><media:content medium="image" url="http://nicorenaldo.com/project/jagawana-illustration.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;a href=&quot;https://github.com/Bobby-Anggunawan/Jagawana-AndroidApp&quot;&gt;Android App&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="hardware" /><category term="classify audio" /><category term="predict audio" /><category term="ML audio" /><category term="detect voice" /><category term="forest fire" /><category term="capstone project" /><category term="bangkit capstone" /><category term="forest protect" /><category term="jagawana" /><summary type="html">In the last post, I talked about my experience at Bangkit Academy 2021 as a Machine Learning Path Participant. After completing the assigned course, we were given a task to do a capstone project by solving a real-life project using our knowledge on Machine Learning, Android Development, and Cloud Computing.</summary></entry><entry><title type="html">Headless Raspberry Pi 3 B+ SSH &amp;amp; WiFi Setup</title><link href="http://nicorenaldo.com/blog/headless-raspi/" rel="alternate" type="text/html" title="Headless Raspberry Pi 3 B+ SSH &amp;amp; WiFi Setup" /><published>2021-03-04T00:00:00+07:00</published><updated>2021-03-04T00:00:00+07:00</updated><id>http://nicorenaldo.com/blog/headless-raspi</id><content type="html" xml:base="http://nicorenaldo.com/blog/headless-raspi/">&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/raspi-headless.jpeg&quot; alt=&quot;Raspberry Pi OpenVPN&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;this-article-covers-setting-up-the-raspberry-pi-3-model-b-for-headless-ssh-access-over-wifi-using-windows-10&quot;&gt;This article covers setting up the Raspberry Pi 3 Model B+ for headless SSH access over WiFi using Windows 10.&lt;/h4&gt;
+
+&lt;div class=&quot;separator&quot; role=&quot;separator&quot;&gt;
+    &lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;step-1-download-and-installing-raspbian&quot;&gt;Step 1. Download and Installing Raspbian&lt;/h3&gt;
+&lt;p&gt;One of the key thing to start your raspberry pi project is the OS, there are several choices you can take such as Windows or Linux Ubuntu, one of the most general choice for raspberry pi is the Raspberry Pi OS (previously called Raspbian).&lt;/p&gt;
+
+&lt;p&gt;Once you have your microSD Card (atleast 8GB) and raspberry pi ready, use the following steps to set up your Raspberry Pi using a Windows, Mac or Linux-based PC (I tried this on Windows, but it should be the same on all three).&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Insert a microSD card / reader into your computer.&lt;/li&gt;
+  &lt;li&gt;Download and install the &lt;a href=&quot;https://www.raspberrypi.org/downloads/&quot;&gt;official Raspberry Pi Imager&lt;/a&gt; through the official website.&lt;/li&gt;
+  &lt;li&gt;Click Choose OS and select Raspbian from the OS menu (there are other choices, we are going to use the latest Raspbian OS). The process could take a while since you need to download the OS image too (around 1 hour for me).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/raspi-imager-menu.png&quot; alt=&quot;Initial Main Menu of the Imager&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;em&gt;Initial Main Menu of the Imager&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/raspi-imager-choose.png&quot; alt=&quot;Choose the Latest Raspbian Version&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;em&gt;Choose the Latest Raspbian Version&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Choose the microSD Card and pick the one you are using&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Click Write. The app will now take a few minutes to download the OS and write to your card.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;step-2-setting-up-wireless-network&quot;&gt;Step 2. Setting Up Wireless Network&lt;/h3&gt;
+&lt;p&gt;If you want to use Raspberry Pi headless, you need to give the initial WiFi settings manually through the microSD Card. If you have successfully installed the Raspberry Pi OS, by inserting it to your Laptop or PC, you should see the boot folder available. We are going to add some new configuration on that boot folder.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open up a new blank notepad, we are going to write a code that pass the WiFi SSID and password to the boot program.&lt;/li&gt;
+  &lt;li&gt;A common wpa_supplicant.conf file would look like this. Copy the following code and change the SSID and password to your current WiFi.
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;country=US
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+network={
+ ssid=&quot;YOUR SSID&quot;
+ psk=&quot;PASSWORD&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Save the file with the name “wpa_supplicant.conf” , make sure you save the file with type “All Files (&lt;em&gt;.&lt;/em&gt;)” and not .txt file.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/save-allfiles.png&quot; alt=&quot;Saving file as All Files type&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Lastly, put the saved file to the boot folder on the microSD, the file will be read and deleted after the raspberry pi next boot up.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;step-3-setting-up-ssh&quot;&gt;Step 3. Setting Up SSH&lt;/h3&gt;
+
+&lt;p&gt;For security reason, SSH are usually not enabled on new Raspberry Pi. To change the setting, you can easily enable it by creating a blank file named “ssh” and put it on the boot folder again. You can create the file with notepad by following this instructions :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open up a blank new notepad.
+2/ Save the file using the save as command (you can keep the file empty), give the file name “ssh”.
+3/ Make sure you are saving the file without the .txt extention.&lt;/li&gt;
+  &lt;li&gt;Put the “ssh” file on the boot folder.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you have finished step 1 through 3, you can start booting up your Raspberry Pi by inserting the microSD Card to Raspberry Pi and plug in the 5V adapter.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-4-establishing-a-connection&quot;&gt;Step 4. Establishing a Connection&lt;/h3&gt;
+
+&lt;p&gt;To start a SSH connection, you had to know it’s local IP address first, you can get it easily by using a third-party IP scanner application. There is &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.overlook.android.fing&amp;amp;hl=in&amp;amp;gl=US&quot;&gt;Fing&lt;/a&gt; for smartphone, and there’s &lt;a href=&quot;https://angryip.org/download/#windows&quot;&gt;Angry IP Scanner&lt;/a&gt; for Windows, Mac, and also Linux.&lt;/p&gt;
+
+&lt;p&gt;After installing the IP scanner, use your preferred scanner and find the Raspberry Pi local IP address (make sure you are using the same network as the Raspi). You can identify it from the hostname listed, usually you will find name such as “Raspberry Pi” or something similar.&lt;/p&gt;
+
+&lt;p&gt;After you found the Raspi IP address, you can start making a SSH connection by using external application. I use &lt;a href=&quot;https://www.putty.org/&quot;&gt;PuTTY&lt;/a&gt; as one of the most popular app for Raspberry Pi Prototyping. To start the connection, you only had to fill the IP address field and left everything to default, and click Open to start the connection.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/putty-example.png&quot; alt=&quot;Example of PuTTY Interface&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;em&gt;Example of PuTTY Interface&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A new terminal will pop up, asking for credential and password. The default username and password can be seen below. If your terminal looked like the image below, that means the connection is successfully established and you can start making your project.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;username : pi
+password : raspberry
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/terminal-success.png&quot; alt=&quot;Example of PuTTY Terminal Interface&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;em&gt;Example of PuTTY Terminal Interface&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;optional-step-5-connecting-vnc-viewer-for-desktop-display&quot;&gt;(Optional) Step 5. Connecting VNC Viewer for Desktop Display&lt;/h3&gt;
+
+&lt;p&gt;VNC is already installed on the full Raspberry Pi OS image, and can be installed via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Recommended Software&lt;/code&gt; from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Preferences&lt;/code&gt; menu on other versions. You can enable VNC Server from the command line using raspi-config.&lt;/p&gt;
+
+&lt;p&gt;Now, enable VNC Server by doing the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Navigate to &lt;strong&gt;Interfacing Options&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Scroll down and select &lt;strong&gt;VNC &amp;gt; Yes&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;separator&quot; role=&quot;separator&quot;&gt;
+    &lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;There you go, your brand new Raspberry Pi is ready to go and you can start making your awesome project. I hope this guide will be helpful to everyone. Keep on tinkering!!!&lt;/p&gt;</content><author><name></name></author><category term="hardware" /><category term="Raspberry Pi" /><category term="Raspberry" /><category term="Pi" /><category term="Raspi" /><category term="Headless" /><category term="Raspi Headless" /><category term="Raspberry Pi PuTTy" /><category term="Raspi WiFi" /><category term="raspberry pi wifi" /><summary type="html"></summary></entry><entry><title type="html">Securing Raspberry Pi Connection with OpenVPN</title><link href="http://nicorenaldo.com/blog/securing-raspi/" rel="alternate" type="text/html" title="Securing Raspberry Pi Connection with OpenVPN" /><published>2021-02-11T00:00:00+07:00</published><updated>2021-02-11T00:00:00+07:00</updated><id>http://nicorenaldo.com/blog/securing-raspi</id><content type="html" xml:base="http://nicorenaldo.com/blog/securing-raspi/">&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/openvpn-raspi.jpg&quot; alt=&quot;Raspberry Pi OpenVPN&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When you are making IoT project using Raspi, you may found yourself ended up using public WiFi for Raspi’s internet connection. While this may grant you internet for your raspi, this connection may not be as secure as you think, amateur hackers can see everything you do online with simple tools like Packet Sniffers. Luckily we can mitigate these threats by setting up a VPN connection on the Raspi.&lt;/p&gt;
+
+&lt;p&gt;What a VPN does basically, is creating a safe tunnel to the VPN server. This will make your transferred data harder to sniff, and also grant your PC/Laptop connected to the VPN, a local network connection with the raspi, thus enabling SSH connection to the raspi. I will show you how to give your raspi access to OpenVPN, the entire process would only take 5–15 minutes.&lt;/p&gt;
+
+&lt;div class=&quot;separator&quot; role=&quot;separator&quot;&gt;
+    &lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;installation&quot;&gt;Installation&lt;/h3&gt;
+&lt;p&gt;For this tutorial, you only need to install OpenVPN on Raspi. Before you begin it would be wise to ensure your software is up to date.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
+sudo apt-get upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can install openvpn by writing this line of code.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install openvpn
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;usage&quot;&gt;Usage&lt;/h3&gt;
+&lt;p&gt;For connecting your raspi (as client) to the VPN server, what you need is the .ovpn files generated from the server itself. For this experiment I was using a private VPN server so I can’t share the file for this tutorial, but you can find some public VPN server from &lt;a href=&quot;https://www.freeopenvpn.org/en/&quot;&gt;this website&lt;/a&gt; or &lt;a href=&quot;https://www.vpngate.net/en/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After you got your .ovpn files (on your pc / laptop), you need to transfer the file either by using &lt;a href=&quot;https://pimylifeup.com/raspberry-pi-ftp/&quot;&gt;FTP over FileZilla&lt;/a&gt; or you can download it directly using your raspi. After that you need to move the .ovpn files to the address :&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/etc/openvpn
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After you got the file, all you need to do is run the openvpn program, also change the file name to the matching file’s name :&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo openvpn example.ovpn
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If all works well, you should see the line of “Initialization Sequence Complete” which indicates the program has finished. You can check the connection and your new IP address to the VPN server by writing this command on a new command window:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; ifconfig
+&amp;gt; route
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The results would show a tun0 parameter that indicates your new IP address on the VPN network, you can compare it by stopping the VPN program and check the ‘ifconfig’ command again. You can see the example result on the image below, my new IP address on the VPN network would be 10.70.132.2 and the route command will show you the IP address of the VPN server.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/terminal-raspi-ifconfig.png&quot; alt=&quot;Ifconfig result shows tun0 for the VPN connection&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;em&gt;Ifconfig result shows tun0 for the VPN connection&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Since our raspi is connected, now you can do a SSH connection to your raspi from a different network, through the VPN, how great is that right ? You can see the example below of how I monitored the Raspi using the it’s IP address on the VPN Network (the IP on tun0 parameter, 10.70.132.2)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blogs/terminal-raspi-vpn.jpeg&quot; alt=&quot;Raspberry Pi Terminal new IP Address connected to the VPN&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;em&gt;Raspberry Pi Terminal showing new IP Address connected to the VPN&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Tadaa!!! Your Raspberry Pi is successfully connected through the VPN and can be accessed by SSH or FTP from device with same VPN network. Your next things to do is making sure the OpenVPN will run on boot up, but that’s gonna be on another story.&lt;/p&gt;
+
+&lt;div class=&quot;separator&quot; role=&quot;separator&quot;&gt;
+    &lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Published by Nico Renaldo at Widya Imersif on February 11, 2021.&lt;/p&gt;</content><author><name></name></author><category term="hardware" /><category term="Raspberry Pi" /><category term="Raspberry" /><category term="Pi" /><category term="Raspi" /><category term="OpenVPN" /><category term="Raspi VPN" /><category term="Raspberry Pi VPN" /><category term="Raspi OpenVPN" /><category term="Raspberry Pi OpenVPN" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://nicorenaldo.com/assets/img/blogs/openvpn-raspi.jpg" /><media:content medium="image" url="http://nicorenaldo.com/assets/img/blogs/openvpn-raspi.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://nicorenaldo.com/blog/securing-raspi/</loc>
+<lastmod>2021-02-11T00:00:00+07:00</lastmod>
+</url>
+<url>
+<loc>http://nicorenaldo.com/blog/headless-raspi/</loc>
+<lastmod>2021-03-04T00:00:00+07:00</lastmod>
+</url>
+<url>
 <loc>http://nicorenaldo.com/blog/jagawana-overview/</loc>
 <lastmod>2021-05-16T00:00:00+07:00</lastmod>
 </url>
@@ -31,6 +39,9 @@
 <url>
 <loc>http://nicorenaldo.com/project/itin/</loc>
 <lastmod>2021-07-11T00:00:00+07:00</lastmod>
+</url>
+<url>
+<loc>http://nicorenaldo.com/blogs/</loc>
 </url>
 <url>
 <loc>http://nicorenaldo.com/blogs/</loc>

@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Headless Raspberry Pi 3 B+ SSH & WiFi Setup</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:site_name" content="Nico Renaldo Blog">
+<meta property="og:title" content="Headless Raspberry Pi 3 B+ SSH & WiFi Setup">
+<meta name="title" content="Headless Raspberry Pi 3 B+ SSH & WiFi Setup">
+<meta data-rh="true" property="article:published_time" content="2021-03-04T00:00:00+07:00">
+
+<meta name="description" content="This article covers setting up the Raspberry Pi 3 Model B+ for headless SSH access over WiFi using Windows 10.">
+<meta property="og:description" content="This article covers setting up the Raspberry Pi 3 Model B+ for headless SSH access over WiFi using Windows 10.">
+
+<meta itemprop="keywords" content="Raspberry Pi,Raspberry,Pi,Raspi,Headless,Raspi Headless,Raspberry Pi PuTTy,Raspi WiFi,raspberry pi wifi" />
+
+<meta property="article:tag" content="Raspberry Pi">
+
+<meta property="article:tag" content="Raspberry">
+
+<meta property="article:tag" content="Pi">
+
+<meta property="article:tag" content="Raspi">
+
+<meta property="article:tag" content="Headless">
+
+<meta property="article:tag" content="Raspi Headless">
+
+<meta property="article:tag" content="Raspberry Pi PuTTy">
+
+<meta property="article:tag" content="Raspi WiFi">
+
+<meta property="article:tag" content="raspberry pi wifi">
+
+
+<meta property="article:author" content="https://nicorenaldo.com">
+<link data-rh="true" rel="author" href="http://nicorenaldo.com">
+<meta property="author" content="Nico Renaldo">
+<meta name="author" content="Nico Renaldo">
+
+<!-- Reference from Medium -->
+<meta property="og:url" content="http://nicorenaldo.com/blog/headless-raspi/" />
+<meta property="og:image" content="http://nicorenaldo.com/assets/img/logo/logo.jpg" />
+<meta data-rh="true" property="article:author" content="http://nicorenaldo.com">
+<link data-rh="true" rel="icon" href="http://nicorenaldo.com/assets/img/logo/logo.jpg">
+<meta data-rh="true" name="robots" content="index,follow,max-image-preview:large">
+<meta data-rh="true" name="twitter:label1" content="Reading time">
+<meta data-rh="true" name="twitter:data1" content="6 min read">
+<link data-rh="true" rel="search" type="application/opensearchdescription+xml" title="Nico Renaldo" href="/sitemap.xml">
+<link data-rh="true" rel="canonical" href="http://nicorenaldo.com/blog/headless-raspi/">
+<link data-rh="true" rel="alternate" href="nicorenaldo.com">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G3EL905KFD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G3EL905KFD');
+</script>
+        <script src="https://kit.fontawesome.com/f231ca2b0e.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="/assets/img/logo/favicon.ico" type="image/x-icon">
+        <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="/assets/styles/style.css">
+        <link rel="stylesheet" href="/assets/styles/main.css">
+        <link rel="stylesheet preload" as="style" type="text/css" href="/assets/styles/fonts.css"
+            crossorigin="anonymous">
+    </head>
+    <body id="body">
+        
+        <div class="all">
+            <div class="navbar" id="navbar">
+  <div class="navbar-dropdown">
+    <a href="javascript:void(0);" class="icon navbar-dropdown-toggle" data-toggle="navbar-dropdown" onclick="navbar()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <div class="navbar-dropdown-menu" id="myTopnav">
+      <a href="/" target="_self">Home</a>
+      <a href="/#about" target="_self">About</a>
+      <a href="/#experience" target="_self">Experience</a>
+      <a href="/#projects" target="_self">Projects</a>
+      <a href="/blogs/" target="_self">Blogs</a>
+    </div>
+  </div>
+
+  <div class="switch-wrapper">
+    <div class="sun"></div>
+    <div class="toggle-wrapper">
+      <input id="switch" type="checkbox" />
+      <label for="switch" id="toggle">Toggle</label>
+    </div>
+    <div class="moon"></div>
+  </div>
+</div>
+            <section class="project-post">
+                <div class="page-title">
+                    <h1>Headless Raspberry Pi 3 B+ SSH & WiFi Setup</h1>
+                    <span>June 12 2021</span>
+                </div>
+                <div class="content">
+                    <p class="quote"></p>
+                    <p><img src="/assets/img/blogs/raspi-headless.jpeg" alt="Raspberry Pi OpenVPN" class="img-responsive" /></p>
+
+<h4 id="this-article-covers-setting-up-the-raspberry-pi-3-model-b-for-headless-ssh-access-over-wifi-using-windows-10">This article covers setting up the Raspberry Pi 3 Model B+ for headless SSH access over WiFi using Windows 10.</h4>
+
+<div class="separator" role="separator">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<h3 id="step-1-download-and-installing-raspbian">Step 1. Download and Installing Raspbian</h3>
+<p>One of the key thing to start your raspberry pi project is the OS, there are several choices you can take such as Windows or Linux Ubuntu, one of the most general choice for raspberry pi is the Raspberry Pi OS (previously called Raspbian).</p>
+
+<p>Once you have your microSD Card (atleast 8GB) and raspberry pi ready, use the following steps to set up your Raspberry Pi using a Windows, Mac or Linux-based PC (I tried this on Windows, but it should be the same on all three).</p>
+
+<ol>
+  <li>Insert a microSD card / reader into your computer.</li>
+  <li>Download and install the <a href="https://www.raspberrypi.org/downloads/">official Raspberry Pi Imager</a> through the official website.</li>
+  <li>Click Choose OS and select Raspbian from the OS menu (there are other choices, we are going to use the latest Raspbian OS). The process could take a while since you need to download the OS image too (around 1 hour for me).</li>
+</ol>
+
+<p><img src="/assets/img/blogs/raspi-imager-menu.png" alt="Initial Main Menu of the Imager" class="img-responsive" />
+<em>Initial Main Menu of the Imager</em></p>
+
+<p><img src="/assets/img/blogs/raspi-imager-choose.png" alt="Choose the Latest Raspbian Version" class="img-responsive" />
+<em>Choose the Latest Raspbian Version</em></p>
+
+<ol>
+  <li>
+    <p>Choose the microSD Card and pick the one you are using</p>
+  </li>
+  <li>
+    <p>Click Write. The app will now take a few minutes to download the OS and write to your card.</p>
+  </li>
+</ol>
+
+<h3 id="step-2-setting-up-wireless-network">Step 2. Setting Up Wireless Network</h3>
+<p>If you want to use Raspberry Pi headless, you need to give the initial WiFi settings manually through the microSD Card. If you have successfully installed the Raspberry Pi OS, by inserting it to your Laptop or PC, you should see the boot folder available. We are going to add some new configuration on that boot folder.</p>
+
+<ol>
+  <li>Open up a new blank notepad, we are going to write a code that pass the WiFi SSID and password to the boot program.</li>
+  <li>A common wpa_supplicant.conf file would look like this. Copy the following code and change the SSID and password to your current WiFi.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>country=US
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+network={
+ ssid="YOUR SSID"
+ psk="PASSWORD"
+}
+</code></pre></div>    </div>
+  </li>
+  <li>Save the file with the name “wpa_supplicant.conf” , make sure you save the file with type “All Files (<em>.</em>)” and not .txt file.</li>
+</ol>
+
+<p><img src="/assets/img/blogs/save-allfiles.png" alt="Saving file as All Files type" class="img-responsive" /></p>
+
+<ol>
+  <li>Lastly, put the saved file to the boot folder on the microSD, the file will be read and deleted after the raspberry pi next boot up.</li>
+</ol>
+
+<h3 id="step-3-setting-up-ssh">Step 3. Setting Up SSH</h3>
+
+<p>For security reason, SSH are usually not enabled on new Raspberry Pi. To change the setting, you can easily enable it by creating a blank file named “ssh” and put it on the boot folder again. You can create the file with notepad by following this instructions :</p>
+
+<ol>
+  <li>Open up a blank new notepad.
+2/ Save the file using the save as command (you can keep the file empty), give the file name “ssh”.
+3/ Make sure you are saving the file without the .txt extention.</li>
+  <li>Put the “ssh” file on the boot folder.</li>
+</ol>
+
+<p>If you have finished step 1 through 3, you can start booting up your Raspberry Pi by inserting the microSD Card to Raspberry Pi and plug in the 5V adapter.</p>
+
+<h3 id="step-4-establishing-a-connection">Step 4. Establishing a Connection</h3>
+
+<p>To start a SSH connection, you had to know it’s local IP address first, you can get it easily by using a third-party IP scanner application. There is <a href="https://play.google.com/store/apps/details?id=com.overlook.android.fing&amp;hl=in&amp;gl=US">Fing</a> for smartphone, and there’s <a href="https://angryip.org/download/#windows">Angry IP Scanner</a> for Windows, Mac, and also Linux.</p>
+
+<p>After installing the IP scanner, use your preferred scanner and find the Raspberry Pi local IP address (make sure you are using the same network as the Raspi). You can identify it from the hostname listed, usually you will find name such as “Raspberry Pi” or something similar.</p>
+
+<p>After you found the Raspi IP address, you can start making a SSH connection by using external application. I use <a href="https://www.putty.org/">PuTTY</a> as one of the most popular app for Raspberry Pi Prototyping. To start the connection, you only had to fill the IP address field and left everything to default, and click Open to start the connection.</p>
+
+<p><img src="/assets/img/blogs/putty-example.png" alt="Example of PuTTY Interface" class="img-responsive" />
+<em>Example of PuTTY Interface</em></p>
+
+<p>A new terminal will pop up, asking for credential and password. The default username and password can be seen below. If your terminal looked like the image below, that means the connection is successfully established and you can start making your project.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>username : pi
+password : raspberry
+</code></pre></div></div>
+
+<p><img src="/assets/img/blogs/terminal-success.png" alt="Example of PuTTY Terminal Interface" class="img-responsive" />
+<em>Example of PuTTY Terminal Interface</em></p>
+
+<h3 id="optional-step-5-connecting-vnc-viewer-for-desktop-display">(Optional) Step 5. Connecting VNC Viewer for Desktop Display</h3>
+
+<p>VNC is already installed on the full Raspberry Pi OS image, and can be installed via <code class="language-plaintext highlighter-rouge">Recommended Software</code> from the <code class="language-plaintext highlighter-rouge">Preferences</code> menu on other versions. You can enable VNC Server from the command line using raspi-config.</p>
+
+<p>Now, enable VNC Server by doing the following:</p>
+
+<ul>
+  <li>Navigate to <strong>Interfacing Options</strong>.</li>
+  <li>Scroll down and select <strong>VNC &gt; Yes</strong>.</li>
+</ul>
+
+<div class="separator" role="separator">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<p>There you go, your brand new Raspberry Pi is ready to go and you can start making your awesome project. I hope this guide will be helpful to everyone. Keep on tinkering!!!</p>
+
+                </div>
+                <div class="tags">
+                    
+                        <span class="item">Raspberry Pi</span>
+                    
+                        <span class="item">Raspberry</span>
+                    
+                        <span class="item">Pi</span>
+                    
+                        <span class="item">Raspi</span>
+                    
+                        <span class="item">Headless</span>
+                    
+                        <span class="item">Raspi Headless</span>
+                    
+                        <span class="item">Raspberry Pi PuTTy</span>
+                    
+                        <span class="item">Raspi WiFi</span>
+                    
+                        <span class="item">raspberry pi wifi</span>
+                    
+                </div>
+            </section>
+        </div>
+    </body>
+    <footer class="footer">
+    <div class="copyright">
+      <!-- <div class="top">
+        <span>Template from</span>
+      </div> -->
+      <div class="bottom">
+        <a href="https://github.com/bchiang7/bchiang7.github.io">
+          <span style="color: #007bff !important;">Template Source</span>
+        </a>
+      </div>
+    </div>
+    <div class="links">
+  
+      <a href="mailto:nicorenald@gmail.com" target="_blank" title="Instagram">
+        <span class="text">Email</span>
+      </a>
+      <a href="https://www.linkedin.com/in/nicorenaldo/" target="_blank" title="Instagram">
+        <span class="text">Linkedin</span>
+      </a>
+      <a href="https://github.com/nicorenaldo/" target="_blank" title="Instagram">
+        <span class="text">Github</span>
+      </a>
+      <a href="https://www.kaggle.com/nicorenaldo" target="_blank" title="Kaggle">
+        <span class="text">Kaggle</span>
+      </a>
+      <a href="https://nicorenaldo.medium.com/" target="_blank" title="Medium">
+        <span class="text">Medium</span>
+      </a>
+    </div>
+    <!-- import the webpage's javascript file -->
+    <script src="/assets/scripts/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </footer>
+</html>

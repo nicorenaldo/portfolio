@@ -8,15 +8,14 @@
     <meta property="og:site_name" content="Nico Renaldo Blog">
     <meta property="og:title" content="Blogs">
     <meta name="title" content="Blogs">
-    
-    <meta name="description"
-        content="Hello! Welcome to my personal blog. I do projects and I love documenting it.">
+
+    <meta name="description" content="Hello! Welcome to my personal blog. I do projects and I love documenting it.">
     <meta property="og:description"
         content="Hello! Welcome to my personal blog. I do projects and I love documenting it.">
-    
+
 
     <meta name="keywords"
-            content="nicorenaldo, Nico Renaldo, Nico, Renaldo, Portfolio, Nico Renaldo Portfolio, Nico Renaldo Website, Nico UGM, Nico Gadjah Mada">
+        content="nicorenaldo, Nico Renaldo, Nico, Renaldo, Portfolio, Nico Renaldo Portfolio, Nico Renaldo Website, Nico UGM, Nico Gadjah Mada">
 
     <meta property="article:author" content="https://nicorenaldo.com">
     <link data-rh="true" rel="author" href="http://nicorenaldo.com">
@@ -34,8 +33,8 @@
         href="/sitemap.xml">
     <link data-rh="true" rel="canonical" href="http://nicorenaldo.com/blogs/">
     <link data-rh="true" rel="alternate" href="nicorenaldo.com">
-    
-    
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G3EL905KFD"></script>
 <script>
@@ -48,6 +47,8 @@
 
     <script src="https://kit.fontawesome.com/f231ca2b0e.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/assets/img/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/assets/styles/style.css">
     <link rel="stylesheet" href="/assets/styles/main.css">
@@ -55,13 +56,13 @@
 </head>
 
 <body id="body">
-    <div class="all">
-        <div class="navbar" id="navbar">
-  <div class="dropdown">
-    <a href="javascript:void(0);" class="icon dropdown-toggle" data-toggle="dropdown" onclick="navbar()">
+	<div class="all">
+		<div class="navbar" id="navbar">
+  <div class="navbar-dropdown">
+    <a href="javascript:void(0);" class="icon navbar-dropdown-toggle" data-toggle="navbar-dropdown" onclick="navbar()">
       <i class="fa fa-bars"></i>
     </a>
-    <div class="dropdown-menu" id="myTopnav">
+    <div class="navbar-dropdown-menu" id="myTopnav">
       <a href="/" target="_self">Home</a>
       <a href="/#about" target="_self">About</a>
       <a href="/#experience" target="_self">Experience</a>
@@ -79,56 +80,125 @@
     <div class="moon"></div>
   </div>
 </div>
-        
-        <section class="section blogs">
-          <h1 class="blog-header">Blogs</h1>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          <div class="blog-post d-flex justify-content-center">
-            <img class="post-img" src="/assets/img/blogs/soundwave.png" alt="nicorenaldo, Nico Renaldo">
-            <div class="post-inner">
-              <a class="post-title" href=/blog/jagawana-machine-learning/ target="_self">Jagawana — Machine Learning In Depth</a>
-              <!-- <h3 class="post-desc">What is sound and how do machine learning analyze it.</h3> -->
-              <div class="post-time"><time datetime="2021-06-10">10 June 2021</time></div>
-            </div>
-          </div>
-          
-          
-          
-          <div class="blog-post d-flex justify-content-center">
-            <img class="post-img" src="/assets/img/blogs/../project/featured-jagawana.jpg" alt="nicorenaldo, Nico Renaldo">
-            <div class="post-inner">
-              <a class="post-title" href=/blog/jagawana-iot/ target="_self">Jagawana — Internet of Things</a>
-              <!-- <h3 class="post-desc">How to record sounds on device and sending it to cloud.</h3> -->
-              <div class="post-time"><time datetime="2021-06-05">05 June 2021</time></div>
-            </div>
-          </div>
-          
-          
-          
-          <div class="blog-post d-flex justify-content-center">
-            <img class="post-img" src="/assets/img/blogs/../project/jagawana-illustration.png" alt="nicorenaldo, Nico Renaldo">
-            <div class="post-inner">
-              <a class="post-title" href=/blog/jagawana-overview/ target="_self">Detecting Chainsaws in Forest with Machine Learning — Jagawana</a>
-              <!-- <h3 class="post-desc">A wide sensor network system deployed in the forests to prevent ilegal logging using machine learning.</h3> -->
-              <div class="post-time"><time datetime="2021-05-16">16 May 2021</time></div>
-            </div>
-          </div>
-          
-          
-        </section>
+		<section class="section blogs">
+			<h1 class="blog-header">Blogs</h1>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div class="blog-post">
+				<div class="post-inner">
+					<div class="post-time"><time
+							datetime="2021-06-10">10 June 2021</time>
+					</div>
+					
+					<div class="mt-4">
+						<div>
+							<h1>
+								<a class="post-title" href=/blog/jagawana-machine-learning/ target="_self">Jagawana — Machine Learning In Depth</a>
+							</h1>
+							<p class="post-desc mt-3">Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened...</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
+			<div class="blog-post">
+				<div class="post-inner">
+					<div class="post-time"><time
+							datetime="2021-06-05">05 June 2021</time>
+					</div>
+					
+					<div class="mt-4">
+						<div>
+							<h1>
+								<a class="post-title" href=/blog/jagawana-iot/ target="_self">Jagawana — Internet of Things in Depth</a>
+							</h1>
+							<p class="post-desc mt-3">Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened...</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
+			<div class="blog-post">
+				<div class="post-inner">
+					<div class="post-time"><time
+							datetime="2021-05-16">16 May 2021</time>
+					</div>
+					
+					<div class="mt-4">
+						<div>
+							<h1>
+								<a class="post-title" href=/blog/jagawana-overview/ target="_self">Detecting Chainsaws in Forest with Machine Learning — Jagawana</a>
+							</h1>
+							<p class="post-desc mt-3">In the last post, I talked about my experience at Bangkit Academy 2021 as a Machine Learning Path Participant. After completing the assigned course, we were given a task to...</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
+			<div class="blog-post">
+				<div class="post-inner">
+					<div class="post-time"><time
+							datetime="2021-03-04">04 March 2021</time>
+					</div>
+					
+					<div class="mt-4">
+						<div>
+							<h1>
+								<a class="post-title" href=/blog/headless-raspi/ target="_self">Headless Raspberry Pi 3 B+ SSH & WiFi Setup</a>
+							</h1>
+							<p class="post-desc mt-3">This article covers setting up the Raspberry Pi 3 Model B+ for headless SSH access over WiFi using Windows 10. Step 1. Download and Installing Raspbian One of the key...</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
+			<div class="blog-post">
+				<div class="post-inner">
+					<div class="post-time"><time
+							datetime="2021-02-11">11 February 2021</time>
+					</div>
+					
+					<div class="mt-4 d-flex justify-content-between">
+						<div>
+							<h1>
+								<a class="post-title" href=/blog/securing-raspi/ target="_self">Securing Raspberry Pi Connection with OpenVPN</a>
+							</h1>
+							<p class="post-desc mt-3">When you are making IoT project using Raspi, you may found yourself ended up using public WiFi for Raspi’s internet connection. While this may grant you internet for your raspi,...</p>
+						</div>
+						<div>
+							<img class="post-img" src=" /assets/img/blogs/openvpn-raspi.jpg" alt="">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+		</section>
 
-    </div>
+	</div>
 </body>
 
 
